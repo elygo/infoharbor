@@ -2,15 +2,15 @@ function InfoharborIcon(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      width="213.923"
-      height="60.208"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      width={props.width}
+      height={props.height}
       viewBox="0 0 213.923 60.208"
     >
       <defs>
         <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#753cec" />
-          <stop offset="1" stop-color="#685eed" />
+          <stop offset="0" stopColor="#753cec" />
+          <stop offset="1" stopColor="#685eed" />
         </linearGradient>
       </defs>
       <g id="Слой_x0020_1" transform="translate(0.002 -0.003)">
@@ -28,7 +28,7 @@ function InfoharborIcon(props) {
               data-name="Path 17301"
               d="M40.4,6.855c15.825,9.136,13.424,4.979,13.424,23.252s2.4,14.115-13.424,23.252-11.024,9.136-26.849,0S.129,48.379.129,30.106s-2.4-14.115,13.424-23.252,11.024-9.136,26.849,0Z"
               transform="translate(0.001 -0.003)"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               fill="url(#linear-gradient)"
             />
             <g id="Group_1979" data-name="Group 1979" transform="translate(15.269 15.558)">
@@ -38,7 +38,7 @@ function InfoharborIcon(props) {
                 d="M2107.863,2151.45h3.463v3.882h9.567V2144.25h3.464a3.473,3.473,0,0,1,3.463,3.463v25.629h-3.463a3.473,3.473,0,0,1-3.464-3.463v-7.62h-9.567v11.083h-3.463a3.473,3.473,0,0,1-3.463-3.463v-14.965A3.473,3.473,0,0,1,2107.863,2151.45Z"
                 transform="translate(-2104.399 -2144.25)"
                 fill="#ffffff"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
               <path
                 id="Path_17303"
@@ -46,7 +46,7 @@ function InfoharborIcon(props) {
                 d="M2107.012,2150.61h4.3v2.623a2.63,2.63,0,0,1-2.622,2.622h-4.3v-2.622A2.63,2.63,0,0,1,2107.012,2150.61Z"
                 transform="translate(-2104.344 -2150.61)"
                 fill="#fefefe"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
             </g>
           </g>
@@ -216,6 +216,7 @@ function HandshakeIcon(props) {
     </svg>
   );
 }
+
 function WorldIcon(props) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={props.width} height={props.height} viewBox="0 0 41.392 41.392">
@@ -783,34 +784,23 @@ function KeyIcon(props) {
 
 function SIcon(props) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={props.width} height={props.height} viewBox="0 0 54.28 54.281">
-      <g id="Слой_x0020_1" transform="translate(-1.228 -20.032)">
-        <g id="_3203056920032" transform="translate(1.228 20.032)">
-          <path
-            id="Path_16580"
-            data-name="Path 16580"
-            d="M13.061,348.7c.741-.392,2.675-1.738,3.455-1.8,2.284,4.316,1.346,2.615,6.294,1.637,2.577-.509,2.269.02,2.269-4.041h3.906c0,4.829-.2,3.083,4.792,4.673.915.292,1.839,1.018,2.6.017a16.268,16.268,0,0,0,1.321-2.436c1.194.632,2.27,1.326,3.455,1.953-.555,2.076-2.79,2.585-.451,4.357,2.736,2.073,2.987,4.329,4.694,3.341l2.217-1.238c.616,1.164,1.328,2.275,1.953,3.455a15.018,15.018,0,0,0-2.346,1.26c-1.342.913.012,1.966.608,5.287.434,2.422.451,2.167,3.993,2.167v3.906c-5,0-2.913-.571-4.827,5.089-.857,2.533.033,1.924,2.573,3.625-.7,1.05-1.257,2.266-1.953,3.3a19.554,19.554,0,0,1-2.358-1.26c-1.249-.559-1.483.28-2.113,1L40.4,385.652c-1.875,1.4.325,2.367.754,4.209-.919.214-2.691,1.6-3.455,1.8A9.724,9.724,0,0,0,36.807,390c-1.167-2.066-1.3-1.085-4.993-.17-2.893.716-2.827-.244-2.827,4.234H25.08c0-5.171.455-3.084-4.566-4.749-1.825-.6-2.232-1.051-3.2.743a6.3,6.3,0,0,0-.8,1.6c-.8-.187-2.658-1.617-3.455-1.8.111-1.328,2.31-2.749.99-3.993l-1.93-1.678c-.864-.864-1.643-2.231-2.434-2.346-.933-.136-2.258,1.324-3.236,1.406-.187-.8-1.617-2.659-1.8-3.455.393-.091,2.854-1.268,2.854-1.953,0-1.091-.136-.917-.51-2.045-.2-.6-.288-1-.453-1.65-.848-3.341.152-2.916-4.3-2.916v-3.906c4.795,0,3.275.34,4.719-4.6.54-1.846,1.236-2.108-.653-3.225a9.512,9.512,0,0,0-1.661-.892L6.6,355.156c4.051,2.143,2.767,1.939,4.844-.114.627-.62,1.162-1.212,1.8-1.8.662-.612,1.6-.89,1.12-2.078L13.061,348.7Zm17.427,47.625H23.9c-1.455-.231-1.074-1.117-1.074-4.056a16.976,16.976,0,0,1-3.605-.9,18.542,18.542,0,0,1-1.538,2.671c-.78.854-1.523.216-2.077-.108-6.833-4-6.05-2.567-3.747-6.92A9.588,9.588,0,0,1,9.3,384.453c-.464.31-1.027.616-1.51.894-2,1.151-2.071,1.325-3.6-1.495-.471-.87-1.015-1.724-1.495-2.562-1.363-2.38-1.4-2.272,2.246-4.2a17,17,0,0,1-.9-3.605c-1.51,0-4.056.381-4.056-.9v-6.761c0-1.247,2.782-.9,4.056-.9a20.179,20.179,0,0,1,.9-3.605,9.178,9.178,0,0,1-1.776-.929c-2.039-1.221-1.572-1.293.432-4.772,2.581-4.483,1.775-3.644,5.667-1.694l2.438-2.52c-.525-2.253-3.036-2.848-.181-4.537,6.315-3.736,5.592-3.787,7.692.181.694-.058,2.489-.808,3.605-.9,0-2.145-.442-4.056,1.2-4.056,8.378,0,7.362-.774,7.362,4.056l3.605.9a9.487,9.487,0,0,1,.892-1.661c.907-1.522,1.2-1.775,2.872-.751,6.507,3.971,5.925,2.222,3.633,6.733l2.518,2.591c.88-.465,1.581-.966,2.5-1.417,1.256-.615,1.63.465,2.129,1.293.653,1.083,2.732,4.276,2.732,5.381,0,.731-2.833,2.057-3.005,2.1.058.694.808,2.489.9,3.605,4.83,0,4.056-1.016,4.056,7.362,0,1.207-.886,1.213-1.492,1.213-.854,0-1.71-.011-2.565-.011a25.138,25.138,0,0,1-.9,3.605c3.712,1.965,3.488,1.8,2.1,4.357-.308.568-.626,1.123-.986,1.718-.377.622-.634,1.1-.994,1.71-1.062,1.79-1.354,1.568-4.444-.388l-2.591,2.517c.733,1.387,1.871,2.77,1.5,3.586-.254.555-.967.854-1.545,1.176-.9.5-4.386,2.8-5.144,2.654-.884-.171-2.092-2.721-2.17-3.058a20.19,20.19,0,0,1-3.605.9c0,1.274.346,4.056-.9,4.056Z"
-            transform="translate(0.01 -342.042)"
-            fill={props.color}
-            fillRule="evenodd"
-          />
-          <path
-            id="Path_16582"
-            data-name="Path 16582"
-            d="M165.69,524.281c0,1.961.432,8.208,2.21,8.208,2.522,0,.982-2.136.457-4.718-1.763-8.661,5.507-17.064,13.433-17.064,4.891,0,7.969,1.095,11.01,4.143a14.521,14.521,0,0,1-5.622,24.131,15.181,15.181,0,0,1-9.742-.243,14.436,14.436,0,0,1-3.648-2.035c-1.314-1.066-2.5-2.636-3.2-2.636a1.513,1.513,0,0,0-1.263,1.263c0,1.237,3.864,4.061,5,4.633,3.61,1.822,4.889,2.154,9.21,2.154a17.1,17.1,0,0,0,10.221-4.143,16.014,16.014,0,0,0,2.914-3.242c9.4-13.955-5.024-31.872-20.826-25.087C170.242,512.046,165.69,518.183,165.69,524.281Z"
-            transform="translate(-155.541 -497.984)"
-            fill={props.color}
-            fillRule="evenodd"
-          />
-          <path
-            id="Path_16583"
-            data-name="Path 16583"
-            d="M238.33,592.065c0,3.609.467,5.812,2.792,8.572a11.344,11.344,0,0,0,8.257,4.213c4.068,0,6.413-.656,9.352-3.591,6.9-6.9,1.684-16.929-.987-16.929a1.139,1.139,0,0,0-.947,1.263c0,.764.451.962.813,1.4a9.859,9.859,0,0,1,1.135,10.179c-5.1,9.422-18.048,5.127-18.048-4.157,0-4.988,4.3-9.471,8.84-9.471,4.011,0,5.051,1.319,5.051-1.1,0-2.029-10.892-3.016-15,5.046a11.827,11.827,0,0,0-1.258,4.582Z"
-            transform="translate(-223.13 -565.769)"
-            fill={props.color}
-            fillRule="evenodd"
-          />
-        </g>
+    <svg xmlns="http://www.w3.org/2000/svg" width={props.width} height={props.height} viewBox="0 0 77 77">
+      <g id="Group_2016" data-name="Group 2016" transform="translate(-361 -948)">
+        <circle
+          id="Ellipse_320"
+          data-name="Ellipse 320"
+          cx="38.5"
+          cy="38.5"
+          r="38.5"
+          transform="translate(361 948)"
+          fill="#7b27ec"
+        />
+        <path
+          id="site-alt"
+          d="M39.234,26.961S24.6,20.309,24.547,20.292a3.334,3.334,0,0,0-3.455.8,3.376,3.376,0,0,0-.741,3.6l6.609,14.536a1.673,1.673,0,0,0,1.495.982h.032a1.679,1.679,0,0,0,1.5-.927l3.1-6.2,6.2-3.1a1.676,1.676,0,0,0-.055-3.025Zm-8.145,3.378a1.678,1.678,0,0,0-.749.749l-1.783,3.566-5.1-11.187,11.195,5.091-3.561,1.78ZM21.636,36.8c-.288.025-.578.044-.871.055a32.706,32.706,0,0,1-6.073-8.365h1.227a1.676,1.676,0,0,0,0-3.351H13.355a17.2,17.2,0,0,1-.788-5.027,17.152,17.152,0,0,1,.791-5.027h13.5a19.053,19.053,0,0,1,.494,1.989,1.675,1.675,0,0,0,3.291-.627c-.087-.461-.191-.915-.307-1.362H36.09a16.69,16.69,0,0,1,.771,5.029q0,.772-.069,1.525a1.676,1.676,0,1,0,3.338.3c.054-.6.082-1.211.082-1.826a20.106,20.106,0,1,0-20.106,20.1h0c.615,0,1.223-.028,1.823-.082a1.675,1.675,0,1,0-.295-3.338ZM9.873,25.136H4.122a16.788,16.788,0,0,1,0-10.057H9.873a19.564,19.564,0,0,0,0,10.054ZM14.7,11.731a32.684,32.684,0,0,1,5.411-7.688,32.452,32.452,0,0,1,5.412,7.688Zm19.915,0H29.206a32.953,32.953,0,0,0-4.745-7.8A16.835,16.835,0,0,1,34.615,11.731Zm-18.864-7.8a32.919,32.919,0,0,0-4.745,7.8H5.6A16.815,16.815,0,0,1,15.751,3.928ZM5.6,28.486h5.406a32.885,32.885,0,0,0,4.745,7.8A16.837,16.837,0,0,1,5.6,28.486Z"
+          transform="translate(379 966)"
+          fill="#fff"
+        />
       </g>
     </svg>
   );
@@ -1122,6 +1112,37 @@ function ClipIcon(props) {
   );
 }
 
+function CircleIcon(props) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+      <g id="Group_2016" data-name="Group 2016" transform="translate(-311 -270)">
+        <g
+          id="Ellipse_312"
+          data-name="Ellipse 312"
+          transform="translate(311 270)"
+          fill="none"
+          stroke="#7243ec"
+          stroke-width="2"
+        >
+          <circle cx="10.5" cy="10.5" r="10.5" stroke="none" />
+          <circle cx="10.5" cy="10.5" r="9.5" fill="none" />
+        </g>
+        <g
+          id="Ellipse_328"
+          data-name="Ellipse 328"
+          transform="translate(316 275)"
+          fill="#7243ec"
+          stroke="#7243ec"
+          stroke-width="2"
+        >
+          <circle cx="5.5" cy="5.5" r="5.5" stroke="none" />
+          <circle cx="5.5" cy="5.5" r="4.5" fill="none" />
+        </g>
+      </g>
+    </svg>
+  );
+}
+
 function CalendarIcon(props) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="17.431" height="17.431" viewBox="0 0 17.431 17.431">
@@ -1168,25 +1189,25 @@ function RectangleTop() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       width="121.618"
       height="210.147"
       viewBox="0 0 121.618 210.147"
     >
       <defs>
         <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.882" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#9d86f3" />
-          <stop offset="1" stop-color="#070b1a" stop-opacity="0" />
+          <stop offset="0" stopColor="#9d86f3" />
+          <stop offset="1" stopColor="#070b1a" stopOpacity="0" />
         </linearGradient>
         <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#fefefe" />
-          <stop offset="0.102" stop-color="#e6c3de" />
-          <stop offset="1" stop-color="#433dff" />
+          <stop offset="0" stopColor="#fefefe" />
+          <stop offset="0.102" stopColor="#e6c3de" />
+          <stop offset="1" stopColor="#433dff" />
         </linearGradient>
         <linearGradient id="linear-gradient-3" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#fefefe" />
-          <stop offset="0.102" stop-color="#e6c3de" />
-          <stop offset="1" stop-color="#927cf6" />
+          <stop offset="0" stopColor="#fefefe" />
+          <stop offset="0.102" stopColor="#e6c3de" />
+          <stop offset="1" stopColor="#927cf6" />
         </linearGradient>
       </defs>
       <g id="Group_2016" data-name="Group 2016" transform="translate(-1248.076 -205.608)">
@@ -1197,7 +1218,7 @@ function RectangleTop() {
               data-name="Path 17320"
               d="M0,345.89,51.35,370.7v78.89L0,423.434Z"
               transform="translate(0 -326.485)"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               fill="url(#linear-gradient-2)"
             />
             <path
@@ -1205,14 +1226,14 @@ function RectangleTop() {
               data-name="Path 17321"
               d="M985.559,462.55,915.3,480.819v78.89l69.968-17.579Z"
               transform="translate(-863.95 -436.6)"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               fill="url(#linear-gradient-3)"
             />
             <path
               id="Path_17322"
               data-name="Path 17322"
               d="M0,19.405,51.35,44.219,121.609,25.95,64.245,0Z"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               fill="url(#linear-gradient-2)"
             />
           </g>
@@ -1226,25 +1247,25 @@ function RectangleCentral() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       width="227.075"
       height="392.369"
       viewBox="0 0 227.075 392.369"
     >
       <defs>
         <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.882" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#9d86f3" />
-          <stop offset="1" stop-color="#070b1a" stop-opacity="0" />
+          <stop offset="0" stopColor="#9d86f3" />
+          <stop offset="1" stopColor="#070b1a" stopOpacity="0" />
         </linearGradient>
         <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#fefefe" />
-          <stop offset="0.102" stop-color="#e6c3de" />
-          <stop offset="1" stop-color="#433dff" />
+          <stop offset="0" stopColor="#fefefe" />
+          <stop offset="0.102" stopColor="#e6c3de" />
+          <stop offset="1" stopColor="#433dff" />
         </linearGradient>
         <linearGradient id="linear-gradient-3" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#fefefe" />
-          <stop offset="0.102" stop-color="#e6c3de" />
-          <stop offset="1" stop-color="#927cf6" />
+          <stop offset="0" stopColor="#fefefe" />
+          <stop offset="0.102" stopColor="#e6c3de" />
+          <stop offset="1" stopColor="#927cf6" />
         </linearGradient>
       </defs>
       <g id="Group_2016" data-name="Group 2016" transform="translate(-1188.954 -306.131)">
@@ -1255,7 +1276,7 @@ function RectangleCentral() {
               data-name="Path 17320"
               d="M0,345.89l95.877,46.33v147.3L0,490.673Z"
               transform="translate(0 -309.658)"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               fill="url(#linear-gradient-2)"
             />
             <path
@@ -1263,14 +1284,14 @@ function RectangleCentral() {
               data-name="Path 17321"
               d="M1046.481,462.55,915.3,496.66v147.3l130.637-32.822Z"
               transform="translate(-819.423 -414.098)"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               fill="url(#linear-gradient-3)"
             />
             <path
               id="Path_17322"
               data-name="Path 17322"
               d="M0,36.232l95.877,46.33,131.181-34.11L119.953,0Z"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               fill="url(#linear-gradient-2)"
             />
           </g>
@@ -1284,25 +1305,25 @@ function RectangleSide() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       width="160.075"
       height="280.369"
       viewBox="0 0 227.075 392.369"
     >
       <defs>
         <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.882" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#9d86f3" />
-          <stop offset="1" stop-color="#070b1a" stop-opacity="0" />
+          <stop offset="0" stopColor="#9d86f3" />
+          <stop offset="1" stopColor="#070b1a" stopOpacity="0" />
         </linearGradient>
         <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#fefefe" />
-          <stop offset="0.102" stop-color="#e6c3de" />
-          <stop offset="1" stop-color="#433dff" />
+          <stop offset="0" stopColor="#fefefe" />
+          <stop offset="0.102" stopColor="#e6c3de" />
+          <stop offset="1" stopColor="#433dff" />
         </linearGradient>
         <linearGradient id="linear-gradient-3" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#fefefe" />
-          <stop offset="0.102" stop-color="#e6c3de" />
-          <stop offset="1" stop-color="#927cf6" />
+          <stop offset="0" stopColor="#fefefe" />
+          <stop offset="0.102" stopColor="#e6c3de" />
+          <stop offset="1" stopColor="#927cf6" />
         </linearGradient>
       </defs>
       <g id="Group_2016" data-name="Group 2016" transform="translate(-1188.954 -306.131)">
@@ -1313,7 +1334,7 @@ function RectangleSide() {
               data-name="Path 17320"
               d="M0,345.89l95.877,46.33v147.3L0,490.673Z"
               transform="translate(0 -309.658)"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               fill="url(#linear-gradient-2)"
             />
             <path
@@ -1321,14 +1342,14 @@ function RectangleSide() {
               data-name="Path 17321"
               d="M1046.481,462.55,915.3,496.66v147.3l130.637-32.822Z"
               transform="translate(-819.423 -414.098)"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               fill="url(#linear-gradient-3)"
             />
             <path
               id="Path_17322"
               data-name="Path 17322"
               d="M0,36.232l95.877,46.33,131.181-34.11L119.953,0Z"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               fill="url(#linear-gradient-2)"
             />
           </g>
@@ -1346,6 +1367,7 @@ export {
   CalendarIcon,
   EnveloperIcon,
   ClipIcon,
+  CircleIcon,
   HamburgerIcon,
   AdIcon,
   TelegramIcon,

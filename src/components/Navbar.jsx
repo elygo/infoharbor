@@ -59,16 +59,18 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`sticky top-0 z-50 ${scrollTop > 0 ? 'bg-[#EDEFF2] dark:bg-[#7638EC]' : ''}`}>
+    <div className={`sticky top-0 z-50 ${scrollTop > 0 ? 'bg-[#EEEEEE] dark:bg-[#070B1A]' : ''}`}>
       <div className="max-w-[1480px] mx-auto dark:border-[#455478]">
-        <div className="h-[92px] flex justify-between items-center max-w-[1364px] mx-auto max-2xl:px-8">
+        <div
+          className={`${scrollTop > 0 ? 'h-[62px]' : 'h-[92px]'} flex justify-between items-center max-w-[1364px] mx-auto max-2xl:px-8`}
+        >
           <div
             className="px-2 hover:cursor-pointer max-2xl:hidden"
             onClick={() => {
               navigate('/');
             }}
           >
-            <InfoharborIcon width={200} color={theme === 'dark' ? '#fff' : '#000'} />
+            <InfoharborIcon width={scrollTop > 0 ? 140 : 200} color={theme === 'dark' ? '#fff' : '#000'} />
           </div>
           <div
             className="2xl:hidden hover:cursor-pointer hover:bg-[#7638EC] h-16 w-16 rounded-full flex justify-center items-center"
@@ -100,13 +102,15 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="absolute w-full top-[91px] border-b-2 border-[#c4c4c4] dark:border-[#455478]"></div>
+      <div
+        className={`${scrollTop > 0 ? 'top-[61px]' : 'top-[91px]'}"absolute w-full  border-b-2 border-[#c4c4c4] dark:border-[#455478] "`}
+      ></div>
 
       <Menu open={menu} onClose={() => setMenu(false)}>
         <div
           className={`text-center w-[100vw] md:w-[50vw] lg:w-[30vw] h-[calc(100vh-92px)] p-8 flex flex-col justify-between`}
         >
-          <div className="flex flex-col gap-6 ">
+          <div className="flex flex-col gap-6">
             <div
               className="hover:underline hover:cursor-pointer"
               onClick={() => {

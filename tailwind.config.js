@@ -14,9 +14,9 @@ export default {
     },
     extend: {
       colors: {
-        darkBackground: "#10101A",
+        darkBackground: "#070B1A",
         darkText: "#fff",
-        lightBackground: "#EDEFF2",
+        lightBackground: "#EEEEEE",
         lightText: "#000"
       },
       keyframes: {

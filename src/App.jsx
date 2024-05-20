@@ -50,7 +50,7 @@ function App() {
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <HashRouter basename={basename}>
         <div
-          className={`theme-${theme} max-w-[1920px] mx-auto bg-lightBackground text-lightText dark:text-darkText dark:bg-darkBackground`}
+          className={`theme-${theme} mx-auto bg-lightBackground text-lightText dark:text-darkText dark:bg-darkBackground`}
         >
           <Navbar />
           <div className="wrapper">
@@ -65,9 +65,9 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/notfound" element={<NotfoundPage />} /> */}
-              <Route path="*" element={<NotfoundPage />} /> 
+              <Route path="*" element={<NotfoundPage />} />
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
           </div>
           <TailwindToaster />
         </div>

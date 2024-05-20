@@ -23,8 +23,6 @@ export default function Footer() {
     };
   }, []);
 
-  
-
   return (
     <div className="dark:bg-[#2B2A30] h-[81px] mx-auto z-20 dark:text-white relative max-2xl:px-8">
       <div className="flex flex-col gap-8 mt-12 max-md:mt-6 max-md:gap-4">
@@ -45,7 +43,7 @@ export default function Footer() {
         </div>
       ) : (
         ''
-      )}git
+      )}
     </div>
   );
 }

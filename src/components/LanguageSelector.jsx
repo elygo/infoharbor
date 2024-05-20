@@ -60,7 +60,7 @@ export default function LanguageSelector() {
                             onClick={changeLang}
                             className={classNames(
                               active
-                                ? 'text-white bg-[#1A8BEE] dark:bg-[#1A8BEE] hover:bg-[#1A8BEE]'
+                                ? 'text-white bg-[#7343ecd5] dark:bg-[#7343ecd5] hover:bg-[#7343ecd5]'
                                 : 'dark:text-white',
                               'block px-4 py-2 text-sm z-[100]'
                             )}
