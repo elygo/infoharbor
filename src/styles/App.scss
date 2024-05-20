@@ -1,0 +1,117 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import './theme.scss';
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+html[data-theme="dark"] {
+  background-color: #10101A;
+}
+
+html[data-theme="light"] {
+  background-color: #EDEFF2;
+}
+
+body {
+  font-family: "Montserrat", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+
+#root {
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+
+
+  list-style-type: none;
+  z-index: 30 !important;
+
+  li {
+    button:before {
+      content: "" !important;
+    }
+
+    width: 32px;
+    height: 6px !important;
+    border-radius: 4px;
+
+    @include themify($themes) {
+      background-color: themed("text");
+    }
+  }
+
+
+  li.slick-active {
+    width: 60px;
+    background-color: #1A8BEE;
+  }
+}
+
+
+#slick-prev {
+  left: -140px;
+  display: flex;
+  align-items: center;
+  padding: 22px;
+  height: 52px;
+  width: 56px;
+  border-radius: 10px;
+
+  @include themify($themes) {
+    border: 1px solid white;
+    background-color: themed("backgroundColor");
+  }
+}
+
+#slick-next {
+  right: -100px;
+  display: flex;
+  align-items: center;
+  padding: 22px;
+  height: 52px;
+  width: 56px;
+  border-radius: 10px;
+
+  @include themify($themes) {
+    border: 1px solid white;
+    background-color: themed("backgroundColor");
+  }
+}
+
+#slick-prev:hover,
+#slick-next:hover {
+  background-color: #1A8BEE;
+}
+
+
+#slick-prev::before,
+#slick-next::before {
+  display: none;
+}
+
+input[type="file"]::file-selector-button {
+  display: none;
+}
+
+.list-type ul {
+  list-style-type: '-   ' !important;
+  padding-left: 18px;
+}
+
+
+@media screen and (max-width: 1280px) {
+
+  #slick-prev,
+  #slick-next {
+    display: none;
+  }
+}
