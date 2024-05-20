@@ -39,10 +39,10 @@ export default function WelcomeSection() {
             <div className="animate-[bounce_8s_ease-in-out_infinite]">
               <RectangleSide />
             </div>
-            <div className="z-30 animate-bounce-slow absolute top-2 left-36">
+            <div className="z-20 animate-bounce-slow absolute top-2 left-36">
               <RectangleCentral />
             </div>
-            <div className="z-20 animate-[bounce_10s_ease-in-out_infinite] absolute left-48 -top-4">
+            <div className="z-30 animate-[bounce_10s_ease-in-out_infinite] absolute left-48 -top-4">
               <RectangleTop />
             </div>
             <div className="z-40 animate-bounce-medium absolute left-80 top-24">
