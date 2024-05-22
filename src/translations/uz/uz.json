@@ -1,12 +1,13 @@
 {
   "common": {
     "infoharbor": "Infoharbor",
-    "main": "Bosh sahifa",    
+    "main": "Bosh sahifa",
     "pagenotfound": "Sashifa topilmadi!",
     "about": "Biz haqimizda",
     "news": "Yangiliklar",
     "allnews": "Barcha yangiliklar",
     "cooperation": "Hamkorlik",
+    "copyright": "© Barcha huquqlar himoyalangan.",
     "career": "Karyera",
     "management": "Rahbariyat",
     "contact": "Aloqa",
