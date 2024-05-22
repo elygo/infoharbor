@@ -59,10 +59,10 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`sticky top-0 z-50 ${scrollTop > 0 ? 'bg-[#EEEEEE] dark:bg-[#070B1A]' : ''}`}>
+    <div className={`sticky top-0 z-50 ${scrollTop > 0 ? 'bg-lightBackground dark:bg-darkBackground' : ''}`}>
       <div className="max-w-[1480px] mx-auto dark:border-[#455478]">
         <div
-          className={`${scrollTop > 0 ? 'h-[62px]' : 'h-[92px]'} flex justify-between items-center max-w-[1364px] mx-auto max-2xl:px-8`}
+          className={`${scrollTop > 0 ? 'h-[61px]' : 'h-[91px]'} flex justify-between items-center max-w-[1364px] mx-auto max-2xl:px-8`}
         >
           <div
             className="px-2 hover:cursor-pointer max-2xl:hidden"
@@ -86,7 +86,7 @@ export default function Navbar() {
                 <NavLink
                   key={item.id}
                   className={({ isActive }) => {
-                    return `max-2xl:hidden px-8 z-30 h-full flex items-center relative ${theme === 'dark' ? 'before:bg-[#7638EC]' : 'before:bg-[#7638EC] border-[#7638EC]'} ${isActive ? 'bg-gradient-to-b from-[#7638EC] to-[#6665ED] text-white' : "before:content-[''] before:absolute   before:w-full before:h-[1px] before:bottom-0 before:left-0  before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300"} hover:cursor-pointer`;
+                    return `max-2xl:hidden px-8 z-30 h-[calc(100%+1px)] flex items-center relative ${theme === 'dark' ? 'before:bg-[#7638EC]' : 'before:bg-[#7638EC] border-[#7638EC]'} ${isActive ? 'bg-gradient-to-b from-[#7638EC] to-[#6665ED] text-white' : "before:content-[''] before:absolute   before:w-full before:h-[1px] before:bottom-0 before:left-0  before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300"} hover:cursor-pointer`;
                   }}
                   to={item.link}
                 >
@@ -103,7 +103,7 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`${scrollTop > 0 ? 'top-[61px]' : 'top-[91px]'}"absolute w-full  border-b-2 border-[#c4c4c4] dark:border-[#455478] "`}
+        className={`${scrollTop > 0 ? 'top-[61px]' : 'top-[91px]'}"absolute w-full  border-b-2 border-[#80808034] dark:border-[#ffffff23] "`}
       ></div>
 
       <Menu open={menu} onClose={() => setMenu(false)}>

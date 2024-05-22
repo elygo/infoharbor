@@ -11,7 +11,7 @@ export default function WebDevelopment() {
   const navigate = useNavigate();
 
   return (
-    <div className="h-[1950px] max-w-[1364px] mx-auto z-20 dark:text-white relative max-2xl:h-full mt-10">
+    <div className="max-w-[1364px] mx-auto z-20 dark:text-white relative max-2xl:h-full mt-10">
       <div className="flex">
         <div className="w-3 bg-gradient-to-b from-[#EEEEEE] via-[#743EEC] to-[#EEEEEE] dark:bg-gradient-to-b dark:from-[#070B1A] dark:via-[#743EEC] dark:to-[#070B1A]"></div>
         <div className="flex flex-col">
@@ -39,8 +39,8 @@ export default function WebDevelopment() {
                 <CircleIcon />
               </div>
             </div>
-            <div className="w-[987px] h-[193px] flex gap-8 py-2 px-6 items-center bg-white dark:bg-opacity-5 border-2 border-transparent hover:border-[#7243EC] rounded-lg cursor-pointer">
-              <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[20px] font-semibold">
+            <div className="w-[987px] h-[193px] flex gap-10 py-2 px-10 items-center bg-white dark:bg-opacity-5 border-2 border-transparent hover:border-[#7243EC] rounded-lg cursor-pointer">
+              <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                 1
               </div>
               <div>Maßgeschneidertes Webdesign</div>
@@ -51,13 +51,13 @@ export default function WebDevelopment() {
             </div>
           </div>
           <div className="flex">
-            <div className="relative ml-48 h-36 w-20 border-l-4 border-b-4 border-[#7343ecc0] rounded-bl-lg">
-              <div className="absolute left-[67px] top-[132px]">
+            <div className="relative ml-56 h-36 w-[150px] border-l-4 border-b-4 border-[#7343ecc0] rounded-bl-lg">
+              <div className="absolute left-[136px] top-[132px]">
                 <CircleIcon />
               </div>
             </div>
             <div className="w-[987px] h-[193px] mt-12 flex gap-8 py-2 px-6 items-center bg-white dark:bg-opacity-5 border-2 border-transparent hover:border-[#7243EC] rounded-lg cursor-pointer">
-              <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[20px] font-semibold">
+              <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                 2
               </div>
               <div>Maßgeschneidertes Webdesign</div>
@@ -69,7 +69,7 @@ export default function WebDevelopment() {
           </div>
           <div className="flex ml-28">
             <div className="w-[987px] h-[193px] mt-12 flex gap-8 py-2 px-6 items-center bg-white dark:bg-opacity-5 border-2 border-transparent hover:border-[#7243EC] rounded-lg cursor-pointer">
-              <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[20px] font-semibold">
+              <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                 3
               </div>
               <div>Maßgeschneidertes Webdesign</div>
@@ -86,13 +86,13 @@ export default function WebDevelopment() {
           </div>
 
           <div className="flex">
-            <div className="relative ml-48 h-36 w-20 border-l-4 border-b-4 border-[#7343ecc0] rounded-bl-lg">
-              <div className="absolute left-[67px] top-[132px]">
+            <div className="relative ml-56 h-36 w-[150px]  border-l-4 border-b-4 border-[#7343ecc0] rounded-bl-lg">
+              <div className="absolute left-[136px] top-[132px]">
                 <CircleIcon />
               </div>
             </div>
             <div className="w-[987px] h-[193px] mt-12 flex gap-8 py-2 px-6 items-center bg-white dark:bg-opacity-5 border-2 border-transparent hover:border-[#7243EC] rounded-lg cursor-pointer">
-              <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[20px] font-semibold">
+              <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                 4
               </div>
               <div>Maßgeschneidertes Webdesign</div>
@@ -104,7 +104,7 @@ export default function WebDevelopment() {
           </div>
           <div className="flex ml-28">
             <div className="w-[987px] h-[193px] mt-12 flex gap-8 py-2 px-6 items-center bg-white dark:bg-opacity-5 border-2 border-transparent hover:border-[#7243EC] rounded-lg cursor-pointer">
-              <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[20px] font-semibold">
+              <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                 5
               </div>
               <div>Maßgeschneidertes Webdesign</div>
@@ -120,13 +120,13 @@ export default function WebDevelopment() {
             </div>
           </div>
           <div className="flex">
-            <div className="relative ml-48 h-36 w-20 border-l-4 border-b-4 border-[#7343ecc0] rounded-bl-lg">
-              <div className="absolute left-[67px] top-[132px]">
+            <div className="relative ml-56 h-36 w-[150px] border-l-4 border-b-4 border-[#7343ecc0] rounded-bl-lg">
+              <div className="absolute left-[136px] top-[132px]">
                 <CircleIcon />
               </div>
             </div>
             <div className="w-[987px] h-[193px] mt-12 flex gap-8 py-2 px-6 items-center bg-white dark:bg-opacity-5 border-2 border-transparent hover:border-[#7243EC] rounded-lg cursor-pointer">
-              <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[20px] font-semibold">
+              <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                 6
               </div>
               <div>Maßgeschneidertes Webdesign</div>

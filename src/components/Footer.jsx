@@ -24,11 +24,9 @@ export default function Footer() {
   }, []);
 
   return (
-    <div className="dark:bg-[#2B2A30] h-[81px] mx-auto z-20 dark:text-white relative max-2xl:px-8">
-      <div className="flex flex-col gap-8 mt-12 max-md:mt-6 max-md:gap-4">
-        <div className="mt-4">
-          <div className="text-[17px] mt-8 max-xl:text-[14px]">{t('copyright')}</div>
-        </div>
+    <div className="bg-[#ffffff6b] dark:bg-[#2B2A30] h-[81px] mx-auto z-20 dark:text-white relative max-2xl:px-8">
+      <div className="border-t dark:border-[#ffffff33] flex flex-col justify-center items-center gap-8 max-md:mt-6 max-md:gap-4">
+        <div className="text-[17px] dark:text-[#ffffff8e] mt-8 max-xl:text-[14px]">{t('copyright')}</div>
       </div>
       {scrollTop > 50 ? (
         <div
@@ -37,7 +35,7 @@ export default function Footer() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
           }}
-          className="scrollToTop w-16 h-16 bg-[#1a8bee] rounded-full fixed bottom-6 right-6 flex justify-center items-center -rotate-90 hover:cursor-pointer max-md:hidden"
+          className="scrollToTop w-16 h-16 bg-[#743EEC] rounded-full fixed bottom-6 right-6 flex justify-center items-center -rotate-90 hover:cursor-pointer max-md:hidden"
         >
           <ArrowRightIcon color={theme === 'dark' ? 'white' : 'white'} />
         </div>
