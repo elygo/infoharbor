@@ -8,13 +8,11 @@ import ThemeSelector from './ThemeSelector';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Menu from './Menu';
-import axios from 'axios';
 
-export default function Navbar() {
+export default function Navbar(props) {
   const { theme } = useContext(ThemeContext);
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const [scrollTop, setScrollTop] = useState(0);
   const [menu, setMenu] = useState(false);
   const [content, setContent] = useState([]);
 
@@ -48,7 +46,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollTop(window.scrollY);
+      props.setScrollTop(window.scrollY);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -59,18 +57,16 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`sticky top-0 z-50 ${scrollTop > 0 ? 'bg-lightBackground dark:bg-darkBackground' : ''}`}>
+    <div className={`sticky top-0 z-50 ${props.scrollTop > 0 ? 'bg-lightBackground dark:bg-darkBackground' : ''}`}>
       <div className="max-w-[1480px] mx-auto dark:border-[#455478]">
-        <div
-          className={`${scrollTop > 0 ? 'h-[61px]' : 'h-[91px]'} flex justify-between items-center max-w-[1364px] mx-auto max-2xl:px-8`}
-        >
+        <div className={`h-[91px] flex justify-between items-center max-w-[1364px] mx-auto max-2xl:px-8`}>
           <div
             className="px-2 hover:cursor-pointer max-2xl:hidden"
             onClick={() => {
               navigate('/');
             }}
           >
-            <InfoharborIcon width={scrollTop > 0 ? 140 : 200} color={theme === 'dark' ? '#fff' : '#000'} />
+            <InfoharborIcon width={200} color={theme === 'dark' ? '#fff' : '#000'} />
           </div>
           <div
             className="2xl:hidden hover:cursor-pointer hover:bg-[#7638EC] h-16 w-16 rounded-full flex justify-center items-center"
@@ -103,7 +99,7 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`${scrollTop > 0 ? 'top-[61px]' : 'top-[91px]'}"absolute w-full  border-b-2 border-[#80808034] dark:border-[#ffffff23] "`}
+        className={`${props.scrollTop > 0 ? 'top-[61px]' : 'top-[91px]'}"absolute w-full  border-b-2 border-[#80808034] dark:border-[#ffffff23] "`}
       ></div>
 
       <Menu open={menu} onClose={() => setMenu(false)}>

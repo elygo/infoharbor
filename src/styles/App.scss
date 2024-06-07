@@ -27,6 +27,22 @@ body {
   margin: 0 auto;
 }
 
+
+.gradient {
+  background: radial-gradient(circle, #7c27ec64 0%, transparent 70%, transparent 100%);
+  z-index: 0;
+}
+
+.gradient-corner {
+  background: radial-gradient(circle at top right, #7B27EC 0%, transparent 70%, transparent 100%);
+  z-index: 0;
+}
+
+.gradient-light {
+  background: radial-gradient(circle, #7c27ec39 0%, transparent 50%, transparent 100%);
+  z-index: 0;
+}
+
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -52,7 +68,7 @@ body {
 
   li.slick-active {
     width: 60px;
-    background-color: #1A8BEE;
+    background-color: #743EEC;
   }
 }
 
@@ -89,7 +105,7 @@ body {
 
 #slick-prev:hover,
 #slick-next:hover {
-  background-color: #1A8BEE;
+  background-color: #743EEC;
 }
 
 

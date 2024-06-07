@@ -13,6 +13,9 @@ export default function WelcomeSection() {
   return (
     <div className="h-[560px] max-w-[1364px] mx-auto z-20 dark:text-white relative max-2xl:h-full">
       <div className="w-full text-left relative flex max-md:text-center">
+        <div
+          className={`${theme === 'dark' ? 'gradient' : 'gradient-light'} absolute top-16 right-20 w-[550px] h-[550px] max-2xl:hidden`}
+        ></div>
         <div className="static z-40 flex gap-12 items-end justify-between h-full w-full max-2xl:px-8">
           <div className="max-md:w-full md:w-1/2 flex flex-col justify-between items-left gap-8 z-10 max-md:mt-12">
             <div className="mt-24 flex">
