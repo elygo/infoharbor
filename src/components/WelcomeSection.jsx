@@ -23,9 +23,7 @@ export default function WelcomeSection() {
               <div className="flex flex-col gap-8 h-full">
                 <div className="uppercase text-[50px] font-bold">{t('welcome')}</div>
                 <div className="text-[18px] leading-10">
-                  Entfesseln Sie die Kraft der Technologie mit InfoHarbor. Von hochmoderner App-Entwicklung bis hin zu
-                  fundierten Datenanalysen stehen wir Ihnen zur Seite, um Ihr Unternehmen auf neue Höhen zu bringen.
-                  Lassen Sie uns gemeinsam innovieren!
+                  {t('welcome_content')}
                 </div>
                 <div
                   className="cursor-pointer bg-white text-black text-center py-3 w-36 rounded-lg text-[16px] hover:bg-gradient-to-r from-[#763AED] to-[#6663ED] hover:text-white hover:scale-110 hover:origin-top-left"

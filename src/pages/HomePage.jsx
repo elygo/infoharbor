@@ -12,10 +12,12 @@ import TechnologiesSection from '../components/TechnologiesSection';
 export default function HomePage() {
   return (
     <div>
-      <WelcomeSection />
-      <ProjectsSection />
-      <TechnologiesSection />
-      <NewsSection />
+      <div className="min-h-[calc(100vh-174px)]">
+        <WelcomeSection />
+        <ProjectsSection />
+        <TechnologiesSection />
+        <NewsSection />
+      </div>
       <Footer />
     </div>
   );

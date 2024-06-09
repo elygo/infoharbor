@@ -32,32 +32,20 @@ export default function DataSection(props) {
 
               <div className="flex flex-col">
                 <div className="text-[30px]  font-bold">Data 4.0</div>
-                <div className="mt-4 leading-9">
-                  Unsere Datenlösungen bieten eine umfassende Palette von Dienstleistungen für die Analyse, Verarbeitung
-                  und Interpretation Ihrer Daten, um wertvolle Einblicke zu gewinnen und fundierte Entscheidungen zu
-                  treffen. Mit einer Kombination aus Fachwissen, fortschrittlichen Technologien und bewährten Methoden
-                  unterstützen wir Sie dabei, den vollen Wert Ihrer Daten zu erschließen und Ihr Unternehmen
-                  voranzubringen.
-                </div>
+                <div className="mt-4 leading-9">{t('datapage.title')}</div>
               </div>
             </div>
 
             <div className="flex items-end gap-8 mt-8 ml-10">
               <div></div>
               <div className="flex flex-col">
-                <div className="text-[24px]">Datenanalyse:</div>
+                <div className="text-[24px]">{t('datapage.dataanalysis')}</div>
                 <div className="flex gap-8  justify-between items-center">
                   <div className="rounded-full border flex items-center justify-center p-[22px]">
                     <GreenTickIcon width={33} height={33} />
                   </div>
 
-                  <div className="mt-4 leading-9">
-                    Unsere Datenlösungen bieten eine umfassende Palette von Dienstleistungen für die Analyse,
-                    Verarbeitung und Interpretation Ihrer Daten, um wertvolle Einblicke zu gewinnen und fundierte
-                    Entscheidungen zu treffen. Mit einer Kombination aus Fachwissen, fortschrittlichen Technologien und
-                    bewährten Methoden unterstützen wir Sie dabei, den vollen Wert Ihrer Daten zu erschließen und Ihr
-                    Unternehmen voranzubringen.
-                  </div>
+                  <div className="mt-4 leading-9">{t('datapage.dataanalysis_content')}</div>
                 </div>
               </div>
             </div>
@@ -65,19 +53,13 @@ export default function DataSection(props) {
             <div className="flex items-end gap-8 mt-8 ml-10">
               <div></div>
               <div className="flex flex-col">
-                <div className="text-[24px]">Daten-Engineering:</div>
+                <div className="text-[24px]">{t('datapage.dataengineering')}</div>
                 <div className="flex gap-8 justify-between items-center ">
                   <div className="rounded-full border flex items-center justify-center p-[22px]">
                     <GreenTickIcon width={33} height={33} />
                   </div>
 
-                  <div className="mt-4 leading-9">
-                    Unsere Datenlösungen bieten eine umfassende Palette von Dienstleistungen für die Analyse,
-                    Verarbeitung und Interpretation Ihrer Daten, um wertvolle Einblicke zu gewinnen und fundierte
-                    Entscheidungen zu treffen. Mit einer Kombination aus Fachwissen, fortschrittlichen Technologien und
-                    bewährten Methoden unterstützen wir Sie dabei, den vollen Wert Ihrer Daten zu erschließen und Ihr
-                    Unternehmen voranzubringen.
-                  </div>
+                  <div className="mt-4 leading-9">{t('datapage.dataengineering_content')}</div>
                 </div>
               </div>
             </div>
@@ -85,38 +67,14 @@ export default function DataSection(props) {
             <div className="flex items-end gap-8 mt-8 ml-10">
               <div></div>
               <div className="flex flex-col">
-                <div className="text-[24px]">Daten-Science:</div>
+                <div className="text-[24px]">{t('datapage.datascience')}</div>
                 <div className="flex gap-8 justify-between items-center ">
                   <div className="rounded-full border flex items-center justify-center p-[22px]">
                     <GreenTickIcon width={33} height={33} />
                   </div>
 
                   <div className="mt-4 leading-9">
-                    Unsere Datenlösungen bieten eine umfassende Palette von Dienstleistungen für die Analyse,
-                    Verarbeitung und Interpretation Ihrer Daten, um wertvolle Einblicke zu gewinnen und fundierte
-                    Entscheidungen zu treffen. Mit einer Kombination aus Fachwissen, fortschrittlichen Technologien und
-                    bewährten Methoden unterstützen wir Sie dabei, den vollen Wert Ihrer Daten zu erschließen und Ihr
-                    Unternehmen voranzubringen.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex items-end gap-8 mt-8 ml-10">
-              <div></div>
-              <div className="flex flex-col">
-                <div className="text-[24px]">Data:</div>
-                <div className="flex gap-8 justify-between items-center ">
-                  <div className="rounded-full border flex items-center justify-center p-[22px]">
-                    <GreenTickIcon width={33} height={33} />
-                  </div>
-
-                  <div className="mt-4 leading-9">
-                    Unsere Datenlösungen bieten eine umfassende Palette von Dienstleistungen für die Analyse,
-                    Verarbeitung und Interpretation Ihrer Daten, um wertvolle Einblicke zu gewinnen und fundierte
-                    Entscheidungen zu treffen. Mit einer Kombination aus Fachwissen, fortschrittlichen Technologien und
-                    bewährten Methoden unterstützen wir Sie dabei, den vollen Wert Ihrer Daten zu erschließen und Ihr
-                    Unternehmen voranzubringen.
+                  {t('datapage.datascience_content')}
                   </div>
                 </div>
               </div>

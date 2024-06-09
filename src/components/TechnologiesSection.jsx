@@ -43,7 +43,7 @@ export default function TechnologiesSection() {
       <div className="flex w-full">
         <div className="w-1 bg-gradient-to-b from-[#EEEEEE] via-[#743EEC] to-[#EEEEEE] dark:bg-gradient-to-b dark:from-[#070B1A] dark:via-[#743EEC] dark:to-[#070B1A]"></div>
         <div className="w-[calc(100%-5px)] h-full">
-          <div className="text-[40px] ml-10">Technologies</div>
+          <div className="text-[40px] ml-10">{t('technologies')}</div>
           <div className="flex h-full w-full ml-12 my-8 gap-12">
             <div className="w-1/2 flex flex-col">
               <Disclosure as="div" className="group pt-6 px-6" defaultOpen={true}>
@@ -51,7 +51,7 @@ export default function TechnologiesSection() {
                   <>
                     <DisclosureButton className="group flex w-full items-center justify-between">
                       <span className="text-lg font-medium group-data-[open]:font-semibold dark:group-data-[hover]:text-white/80">
-                        Back-end development
+                        Back-end
                       </span>
                       {open ? (
                         <ArrowDownIcon color={theme === 'dark' ? 'white' : 'black'} />
@@ -109,7 +109,7 @@ export default function TechnologiesSection() {
                   <>
                     <DisclosureButton className="group flex w-full items-center justify-between">
                       <span className="text-lg font-medium group-data-[open]:font-semibold  dark:group-data-[hover]:text-white/80">
-                        Front-end development
+                        Front-end
                       </span>
                       {open ? (
                         <ArrowDownIcon color={theme === 'dark' ? 'white' : 'black'} />
@@ -166,7 +166,7 @@ export default function TechnologiesSection() {
                   <>
                     <DisclosureButton className="group flex w-full items-center justify-between">
                       <span className="text-lg font-medium group-data-[open]:font-semibold  dark:group-data-[hover]:text-white/80">
-                        Data
+                        Data 4.0
                       </span>
                       {open ? (
                         <ArrowDownIcon color={theme === 'dark' ? 'white' : 'black'} />
@@ -227,7 +227,7 @@ export default function TechnologiesSection() {
                   <>
                     <DisclosureButton className="group flex w-full items-center justify-between">
                       <span className="text-lg font-medium group-data-[open]:font-semibold  dark:group-data-[hover]:text-white/80">
-                        Mobile
+                        {t('mobile')}
                       </span>
                       {open ? (
                         <ArrowDownIcon color={theme === 'dark' ? 'white' : 'black'} />
