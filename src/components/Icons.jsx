@@ -63,7 +63,7 @@ function InfoharborLogo(props) {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width={props.width}
       height={props.height}
-      viewBox={`0 0 ${props.width} ${props.height}`}
+      viewBox="0 0 60.208 60.208"
     >
       <defs>
         <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">

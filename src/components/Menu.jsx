@@ -16,7 +16,7 @@ export default function Menu({ open, onClose, children }) {
       >
         <div className="p-5 flex justify-between">
           <button className="rounded-lg" onClick={onClose}>
-            <HamburgerIcon color={theme === 'dark' ? 'white' : '#1a8bee'} />
+            <HamburgerIcon color={theme === 'dark' ? 'white' : '#7638EC'} />
           </button>
 
           <InfoharborIcon width={200} color={theme === 'dark' ? '#fff' : '#000'} />

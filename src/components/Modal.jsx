@@ -15,7 +15,7 @@ export default function Modal({ open, onClose, children }) {
       >
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 p-1.5 rounded-lg text-[#1A8BEE] dark:text-black dark:hover:text-white bg-none hover:text-white hover:bg-[#658daf4b]"
+          className="absolute top-6 right-6 p-1.5 rounded-lg text-[#7638EC] dark:text-black dark:hover:text-white bg-none hover:text-white hover:bg-[#658daf4b]"
         >
           <span className="font-bold">
             <CloseIcon color={theme === 'dark' ? 'white' : 'black'} />

@@ -59,14 +59,6 @@ export default function AboutPage() {
               ) : (
                 <>
                   <div className="text-[18px]  text-justify">Infoharbor</div>
-
-                  <ul className="text-justify  text-[18px]">
-                    <li className="my-4">{t('aboutuspage.first')}</li>
-                    <li className="my-4">{t('aboutuspage.second')}</li>
-                    <li className="my-4">{t('aboutuspage.third')}</li>
-                    <li className="my-4">{t('aboutuspage.fourth')}</li>
-                  </ul>
-                  <div className=" text-justify text-[18px]">{t('aboutuspage.last')}</div>
                 </>
               )}
             </motion.div>

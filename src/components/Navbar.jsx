@@ -61,7 +61,7 @@ export default function Navbar(props) {
       <div className="max-w-[1480px] mx-auto dark:border-[#455478]">
         <div className={`h-[91px] flex justify-between items-center max-w-[1364px] mx-auto max-2xl:px-8`}>
           <div
-            className="px-2 hover:cursor-pointer max-2xl:hidden"
+            className="hover:cursor-pointer max-2xl:hidden"
             onClick={() => {
               navigate('/');
             }}
@@ -98,14 +98,10 @@ export default function Navbar(props) {
         </div>
       </div>
 
-      <div
-        className={`${props.scrollTop > 0 ? 'top-[61px]' : 'top-[91px]'}"absolute w-full  border-b-2 border-[#80808034] dark:border-[#ffffff23] "`}
-      ></div>
+      <div className={`top-[91px] absolute w-full  border-b-2 border-[#80808034] dark:border-[#ffffff23]`}></div>
 
       <Menu open={menu} onClose={() => setMenu(false)}>
-        <div
-          className={`text-center w-[100vw] md:w-[50vw] lg:w-[30vw] h-[calc(100vh-92px)] p-8 flex flex-col justify-between`}
-        >
+        <div className={`text-center w-[100vw] md:w-[50vw] lg:w-[30vw] h-[100vh] p-8 flex flex-col justify-between`}>
           <div className="flex flex-col gap-6">
             <div
               className="hover:underline hover:cursor-pointer"
@@ -151,47 +147,6 @@ export default function Navbar(props) {
               }}
             >
               {t('contact')}
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <div className="">{t('social')}</div>
-            <div className="flex gap-4 justify-center items-center">
-              {content.length > 0 ? (
-                <>
-                  <a
-                    href={content.find((x) => x.id == 18).link}
-                    target="_blank"
-                    className="rounded-full border border-[#1A8BEE] dark:border-white p-1 hover:bg-gray-200 dark:hover:bg-[#1A8BEE] cursor-pointer w-8 h-8 flex items-center justify-center"
-                  >
-                    <TelegramIcon color={theme === 'dark' ? 'white' : '#1A8BEE'} />
-                  </a>
-                  <a
-                    href={content.find((x) => x.id == 19).link}
-                    target="_blank"
-                    className="rounded-full border border-[#1A8BEE] dark:border-white p-2 hover:bg-gray-200 dark:hover:bg-[#1A8BEE] cursor-pointer w-8 h-8 flex items-center justify-center"
-                  >
-                    <FacebookIcon color={theme === 'dark' ? 'white' : '#1A8BEE'} />
-                  </a>
-                </>
-              ) : (
-                <>
-                  <a
-                    href="https://t.me/geoinfocom"
-                    target="_blank"
-                    className="rounded-full border border-[#1A8BEE] dark:border-white p-1 hover:bg-gray-200 dark:hover:bg-[#1A8BEE] cursor-pointer w-8 h-8 flex items-center justify-center"
-                  >
-                    <TelegramIcon color={theme === 'dark' ? 'white' : '#1A8BEE'} />
-                  </a>
-                  <a
-                    href="https://www.facebook.com/geoinfocom.center/"
-                    target="_blank"
-                    className="rounded-full border border-[#1A8BEE] dark:border-white p-2 hover:bg-gray-200 dark:hover:bg-[#1A8BEE] cursor-pointer w-8 h-8 flex items-center justify-center"
-                  >
-                    <FacebookIcon color={theme === 'dark' ? 'white' : '#1A8BEE'} />
-                  </a>
-                </>
-              )}
             </div>
           </div>
         </div>

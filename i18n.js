@@ -5,20 +5,33 @@ import Ru from "./src/translations/ru/ru.json";
 import Uz from "./src/translations/uz/uz.json";
 import De from "./src/translations/de/de.json";
 
+const domain = window.location.hostname.split('.').pop();
+
 const resources = {
     Uz,
-    De,
     En,
     Ru,
+    De
 };
 
-export const availableLanguages = Object.keys(resources);
+const resourcesUz = {
+    Uz,
+    En,
+    Ru
+};
+
+const resourcesDe = {
+    De,
+    En,
+};
+
+export const availableLanguages = domain == "de" ? Object.keys(resourcesDe) : Object.keys(resourcesUz);
 
 i18n.use(initReactI18next).init({
     resources,
-    lng: window.localStorage.i18nextLng,
+    lng: window.localStorage.i18nextLng?.toString().toLowerCase() == domain ? window.localStorage.i18nextLng : "En",
     defaultNS: "common",
-    fallbackLng: "En",
+    fallbackLng: domain == "de" ? "De" : "Uz",
 });
 
 export default i18n;

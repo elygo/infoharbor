@@ -57,7 +57,7 @@ export default function ServicesSection() {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -72,13 +72,13 @@ export default function ServicesSection() {
 
   return (
     <div className="max-w-[1364px] mx-auto z-20 dark:text-white relative max-2xl:h-full my-10">
-      <div className="flex w-full">
-        <div className="w-1.5 bg-gradient-to-b from-[#EEEEEE] via-[#743EEC] to-[#EEEEEE] dark:bg-gradient-to-b dark:from-[#070B1A] dark:via-[#743EEC] dark:to-[#070B1A]"></div>
-        <div className="w-[calc(100%-5px)] h-full">
-          <div className="text-[40px] ml-10">{t('services')}</div>
-          <div className="flex h-full w-full ml-12 my-8 flex-col">
+      <div className="flex w-full  max-2xl:px-8">
+        <div className="w-1 bg-gradient-to-b from-[#EEEEEE] via-[#743EEC] to-[#EEEEEE] dark:bg-gradient-to-b dark:from-[#070B1A] dark:via-[#743EEC] dark:to-[#070B1A] max-md:hidden"></div>
+        <div className="w-[calc(100%-5px)] h-full max-md:w-full">
+          <div className="text-[40px] ml-10 max-md:ml-0 max-md:text-center">{t('services')}</div>
+          <div className="flex h-full w-full ml-12 max-md:ml-0 my-8 flex-col">
             <Slider {...settings} className="slider-container">
-              <div className="h-[420px] pr-4 mb-6" key={1}>
+              <div className="h-[420px] pr-4 max-md:pr-0 mb-6" key={1}>
                 <div className="h-full flex flex-col justify-between px-8 py-6 bg-white dark:bg-[#2D2A39] rounded-lg border dark:border-[#2D2A39] hover:border-[#7B27EC] dark:hover:border-[#7B27EC]  dark:hover:border-[#7B27EC]">
                   <div className="h-full">
                     <div className="line-clamp-8 max-xl:line-clamp-4 font-semibold">{t('mobiledev')}</div>
@@ -114,7 +114,7 @@ export default function ServicesSection() {
                 </div>
               </div>
 
-              <div className="h-[420px] pr-4 mb-6" key={2}>
+              <div className="h-[420px] pr-4 max-md:pr-0 mb-6" key={2}>
                 <div className="h-full flex flex-col justify-between px-8 py-6 bg-white dark:bg-[#2D2A39] rounded-lg border dark:border-[#2D2A39] hover:border-[#7B27EC] dark:hover:border-[#7B27EC]  dark:hover:border-[#7B27EC]">
                   <div className="h-full">
                     <div className="line-clamp-8 max-xl:line-clamp-4 font-semibold">Data 4.0</div>
@@ -149,7 +149,7 @@ export default function ServicesSection() {
                   </div>
                 </div>
               </div>
-              <div className="h-[420px] pr-4 mb-6" key={3}>
+              <div className="h-[420px] pr-4 max-md:pr-0 mb-6" key={3}>
                 <div className="h-full flex flex-col justify-between px-8 py-6 bg-white dark:bg-[#2D2A39] rounded-lg border dark:border-[#2D2A39] hover:border-[#7B27EC]  dark:hover:border-[#7B27EC]">
                   <div className="h-full">
                     <div className="line-clamp-8 max-xl:line-clamp-4 font-semibold">{t('webapp')}</div>
@@ -184,7 +184,7 @@ export default function ServicesSection() {
                   </div>
                 </div>
               </div>
-              <div className="h-[420px] pr-4 mb-6" key={4}>
+              <div className="h-[420px] pr-4 max-md:pr-0 mb-6" key={4}>
                 <div className="h-full flex flex-col justify-between px-8 py-6 bg-white dark:bg-[#2D2A39] rounded-lg border dark:border-[#2D2A39] hover:border-[#7B27EC]  dark:hover:border-[#7B27EC]">
                   <div className="h-full">
                     <div className="line-clamp-8 max-xl:line-clamp-4 font-semibold">{t('ai')}</div>

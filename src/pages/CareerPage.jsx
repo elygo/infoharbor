@@ -49,7 +49,7 @@ export default function NewsPage() {
                   transition={{ type: 'spring', duration: 0.8 * (index + 1) }}
                 >
                   <div
-                    className="h-[410px] w-[430px] max-md:h-full max-sm:w-full  relative hover:z-50 hover:shadow-lg bg-white dark:bg-[#2D2A39] p-8 drop-shadow-xs rounded-lg transition transform duration-1000 hover:scale-105"
+                    className="h-[410px] w-[430px] max-md:h-full max-sm:w-full relative hover:z-50 hover:shadow-lg bg-white dark:bg-[#2D2A39] p-8 drop-shadow-xs rounded-lg transition transform duration-1000 hover:scale-105"
                     key={index}
                     onClick={() => {
                       navigate(`/career/${item.id}`);
@@ -58,7 +58,7 @@ export default function NewsPage() {
                     <div className="h-full flex flex-col gap-4">
                       <div className="flex flex-col gap-4">
                         <div className="flex items-center gap-4">
-                          <InfoharborLogo color={'white'} width={60} height={60} />
+                          <InfoharborLogo width={50} height={50} />
                           <div className="text-[18px] font-semibold line-clamp-2">{item.title}</div>
                         </div>
                         <div className="text-[16px] font-semibold">{t('tasks')}</div>

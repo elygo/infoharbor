@@ -125,7 +125,7 @@ export default function CareerDetail() {
                         return (
                           <div className="flex flex-col gap-4" key={index}>
                             <div className="flex gap-4 items-center">
-                              <InfoharborLogo color={'white'} width={60} height={60} />
+                              <InfoharborLogo width={50} height={50} />
                               <div className="text-[24px] max-md:text-[20px] font-bold">{vac.title}</div>
                             </div>
 

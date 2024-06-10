@@ -23,6 +23,7 @@ export default function LanguageSelector() {
    */
   const changeLang = (e) => {
     i18n.changeLanguage(e.target.innerText);
+    console.log(e.target.innerText);
     localStorage.setItem('i18nextLng', e.target.innerText);
   };
 

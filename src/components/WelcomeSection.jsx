@@ -14,15 +14,15 @@ export default function WelcomeSection() {
     <div className="h-[560px] max-w-[1364px] mx-auto z-20 dark:text-white relative max-2xl:h-full">
       <div className="w-full text-left relative flex max-md:text-center">
         <div
-          className={`${theme === 'dark' ? 'gradient' : 'gradient-light'} absolute top-16 right-20 w-[550px] h-[550px] max-2xl:hidden`}
+          className={`${theme === 'dark' ? 'gradient' : 'gradient-light'} absolute top-16 right-20 w-[550px] h-[550px] max-md:hidden`}
         ></div>
         <div className="static z-40 flex gap-12 items-end justify-between h-full w-full max-2xl:px-8">
           <div className="max-md:w-full md:w-1/2 flex flex-col justify-between items-left gap-8 z-10 max-md:mt-12">
-            <div className="mt-24 flex">
-              <div className="w-4 mr-10 bg-gradient-to-b from-[#EEEEEE] via-[#743EEC] to-[#EEEEEE] dark:bg-gradient-to-b dark:from-[#070B1A] dark:via-[#743EEC] dark:to-[#070B1A]"></div>
-              <div className="flex flex-col gap-8 h-full">
-                <div className="uppercase text-[50px] font-bold">{t('welcome')}</div>
-                <div className="text-[18px] leading-10">
+            <div className="w-full mt-24 max-md:mt-12 flex">
+              <div className="w-1 mr-10 bg-gradient-to-b from-[#EEEEEE] via-[#743EEC] to-[#EEEEEE] dark:bg-gradient-to-b dark:from-[#070B1A] dark:via-[#743EEC] dark:to-[#070B1A] max-md:hidden"></div>
+              <div className="w-full flex flex-col gap-8 h-full max-md:items-center">
+                <div className="uppercase text-[50px] max-md:text-[32px] font-bold">{t('welcome')}</div>
+                <div className="text-[18px] leading-10 max-md:text-[14px] max-md:leading-8 ">
                   {t('welcome_content')}
                 </div>
                 <div

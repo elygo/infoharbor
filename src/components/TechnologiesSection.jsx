@@ -5,12 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowDownIcon, ArrowRightIcon } from './Icons';
 import {
   faAndroid,
-  faAppStore,
   faAppStoreIos,
-  faDigitalOcean,
-  faGoogle,
-  faGooglePay,
-  faInvision,
   faJava,
   faJs,
   faNodeJs,
@@ -20,16 +15,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faCross,
-  faCruzeiroSign,
-  faDashboard,
-  faDatabase,
-  faF,
-  faHandSparkles,
-  faMultiply,
-  faTable
-} from '@fortawesome/free-solid-svg-icons';
+import { faDashboard, faDatabase, faMultiply } from '@fortawesome/free-solid-svg-icons';
 import { faBarChart } from '@fortawesome/free-regular-svg-icons';
 
 export default function TechnologiesSection() {
@@ -40,12 +26,12 @@ export default function TechnologiesSection() {
 
   return (
     <div className="max-w-[1364px] mx-auto z-20 dark:text-white relative max-2xl:h-full my-10">
-      <div className="flex w-full">
-        <div className="w-1 bg-gradient-to-b from-[#EEEEEE] via-[#743EEC] to-[#EEEEEE] dark:bg-gradient-to-b dark:from-[#070B1A] dark:via-[#743EEC] dark:to-[#070B1A]"></div>
+      <div className="flex w-full  max-2xl:px-8">
+        <div className="w-1 bg-gradient-to-b from-[#EEEEEE] via-[#743EEC] to-[#EEEEEE] dark:bg-gradient-to-b dark:from-[#070B1A] dark:via-[#743EEC] dark:to-[#070B1A] max-md:hidden"></div>
         <div className="w-[calc(100%-5px)] h-full">
-          <div className="text-[40px] ml-10">{t('technologies')}</div>
-          <div className="flex h-full w-full ml-12 my-8 gap-12">
-            <div className="w-1/2 flex flex-col">
+          <div className="text-[40px] ml-10 max-md:ml-0 max-md:text-center">{t('technologies')}</div>
+          <div className="flex max-md:flex-col h-full w-full md:ml-12 max my-8 md:gap-12 max-md:gap-0">
+            <div className="max-md:w-full md:w-1/2 flex flex-col">
               <Disclosure as="div" className="group pt-6 px-6" defaultOpen={true}>
                 {({ open }) => (
                   <>
@@ -160,7 +146,7 @@ export default function TechnologiesSection() {
               </Disclosure>
             </div>
 
-            <div className="w-1/2 flex flex-col">
+            <div className="max-md:w-full md:w-1/2 flex flex-col">
               <Disclosure as="div" className="group pt-6 px-6" defaultOpen={true}>
                 {({ open }) => (
                   <>
