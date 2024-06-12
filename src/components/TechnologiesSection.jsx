@@ -18,6 +18,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDashboard, faDatabase, faMultiply } from '@fortawesome/free-solid-svg-icons';
 import { faBarChart } from '@fortawesome/free-regular-svg-icons';
 
+import { motion, AnimatePresence } from 'framer-motion';
 export default function TechnologiesSection() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();

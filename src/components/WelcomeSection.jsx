@@ -4,6 +4,7 @@ import { ThemeContext } from '../utils/ThemeContext';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { RectangleCentral, RectangleSide, RectangleTop } from './Icons';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function WelcomeSection() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -21,10 +22,30 @@ export default function WelcomeSection() {
             <div className="w-full mt-24 max-md:mt-12 flex">
               <div className="w-1 mr-10 bg-gradient-to-b from-[#EEEEEE] via-[#743EEC] to-[#EEEEEE] dark:bg-gradient-to-b dark:from-[#070B1A] dark:via-[#743EEC] dark:to-[#070B1A] max-md:hidden"></div>
               <div className="w-full flex flex-col gap-8 h-full max-md:items-center">
-                <div className="uppercase text-[50px] max-md:text-[32px] font-bold">{t('welcome')}</div>
-                <div className="text-[18px] leading-10 max-md:text-[14px] max-md:leading-8 ">
-                  {t('welcome_content')}
-                </div>
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={'empty'}
+                    initial={{ x: 40, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    exit={{ x: -40, opacity: 0 }}
+                    transition={{ duration: 2.5 }}
+                  >
+                    <div className="uppercase text-[50px] max-md:text-[32px] font-bold">{t('welcome')}</div>
+                  </motion.div>
+                </AnimatePresence>
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={'empty'}
+                    initial={{ x: 100, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    exit={{ x: -40, opacity: 0 }}
+                    transition={{ duration: 3.5 }}
+                  >
+                    <div className="text-[18px] leading-10 max-md:text-[14px] max-md:leading-8 ">
+                      {t('welcome_content')}
+                    </div>
+                  </motion.div>
+                </AnimatePresence>
                 <div
                   className="cursor-pointer bg-white text-black text-center py-3 w-36 rounded-lg text-[16px] hover:bg-gradient-to-r from-[#763AED] to-[#6663ED] hover:text-white hover:scale-110 hover:origin-top-left"
                   onClick={() => {

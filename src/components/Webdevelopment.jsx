@@ -1,15 +1,38 @@
 import React from 'react';
-import { useContext, useState, useEffect } from 'react';
+import { useContext, useRef, useState, useEffect } from 'react';
 import { ThemeContext } from '../utils/ThemeContext';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { CircleIcon, SIcon } from './Icons';
 import Footer from './Footer';
+import VanillaTilt from 'vanilla-tilt';
 
 export default function WebDevelopment(props) {
   const { theme, setTheme } = useContext(ThemeContext);
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
+  const tilt = useRef(null);
+  const tilt2 = useRef(null);
+  const tilt3 = useRef(null);
+  const tilt4 = useRef(null);
+  const tilt5 = useRef(null);
+  const tilt6 = useRef(null);
+
+  const options = {
+    scale: 1,
+    speed: 100,
+    max: 2
+  };
+
+  useEffect(() => {
+    VanillaTilt.init(tilt.current, options);
+    VanillaTilt.init(tilt2.current, options);
+    VanillaTilt.init(tilt3.current, options);
+    VanillaTilt.init(tilt3.current, options);
+    VanillaTilt.init(tilt4.current, options);
+    VanillaTilt.init(tilt5.current, options);
+    VanillaTilt.init(tilt6.current, options);
+  }, [options]);
 
   useEffect(() => {
     props.setScrollTop(0);
@@ -46,11 +69,14 @@ export default function WebDevelopment(props) {
             </div>
             <div className="flex mt-8 items-center">
               <div className="max-xl:hidden h-1 bg-[#7343ecc0] w-28 relative flex justify-end items-center">
-                <div className="absolute -right-3">
+                <div className="z-[40] absolute -right-3">
                   <CircleIcon />
                 </div>
               </div>
-              <div className="w-[987px] h-[193px] max-xl:w-full max-xl:h-full flex gap-10 py-2 max-xl:gap-4 max-xl:px-4 px-10 items-center bg-white dark:bg-opacity-5 border-2 border-transparent hover:border-[#7243EC] rounded-lg cursor-pointer">
+              <div
+                ref={tilt}
+                className="hover:z-[50] w-[987px] h-[193px] max-xl:w-full max-xl:h-full flex gap-10 py-2 max-xl:gap-4 max-xl:px-4 px-10 items-center bg-white dark:bg-[#141726] border border-transparent hover:border-[#7343ecc0] rounded-lg cursor-pointer"
+              >
                 <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                   1
                 </div>
@@ -63,11 +89,14 @@ export default function WebDevelopment(props) {
             </div>
             <div className="flex">
               <div className="max-xl:hidden relative ml-56 h-36 w-[150px] border-l-4 border-b-4 border-[#7343ecc0] rounded-bl-lg">
-                <div className="absolute left-[136px] top-[132px]">
+                <div className="z-[40] absolute left-[136px] top-[132px]">
                   <CircleIcon />
                 </div>
               </div>
-              <div className="w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4 items-center bg-white dark:bg-opacity-5 border-2 border-transparent hover:border-[#7243EC] rounded-lg cursor-pointer">
+              <div
+                ref={tilt2}
+                className="hover:z-[50] w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4 items-center bg-white dark:bg-[#141726] border border-transparent hover:border-[#7343ecc0] rounded-lg cursor-pointer"
+              >
                 <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                   2
                 </div>
@@ -79,7 +108,10 @@ export default function WebDevelopment(props) {
               </div>
             </div>
             <div className="flex ml-28 max-xl:ml-0">
-              <div className="w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4  items-center bg-white dark:bg-opacity-5 border-2 border-transparent hover:border-[#7243EC] rounded-lg cursor-pointer">
+              <div
+                ref={tilt3}
+                className="hover:z-[50] w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4  items-center bg-white dark:bg-[#141726] border border-transparent hover:border-[#7343ecc0] rounded-lg cursor-pointer"
+              >
                 <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                   3
                 </div>
@@ -90,7 +122,7 @@ export default function WebDevelopment(props) {
                 </div>
               </div>
               <div className="max-xl:hidden relative h-36 w-20 border-r-4 border-b-4 border-[#7343ecc0] rounded-br-lg">
-                <div className="absolute -left-3 top-[132px]">
+                <div className="z-[40] absolute -left-3 top-[132px]">
                   <CircleIcon />
                 </div>
               </div>
@@ -98,11 +130,14 @@ export default function WebDevelopment(props) {
 
             <div className="flex">
               <div className="max-xl:hidden relative ml-56 h-36 w-[150px]  border-l-4 border-b-4 border-[#7343ecc0] rounded-bl-lg">
-                <div className="absolute left-[136px] top-[132px]">
+                <div className="z-[40] absolute left-[136px] top-[132px]">
                   <CircleIcon />
                 </div>
               </div>
-              <div className="w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4  items-center bg-white dark:bg-opacity-5 border-2 border-transparent hover:border-[#7243EC] rounded-lg cursor-pointer">
+              <div
+                ref={tilt4}
+                className="hover:z-[50] w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4  items-center bg-white dark:bg-[#141726] border border-transparent hover:border-[#7343ecc0] rounded-lg cursor-pointer"
+              >
                 <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                   4
                 </div>
@@ -114,7 +149,10 @@ export default function WebDevelopment(props) {
               </div>
             </div>
             <div className="flex ml-28 max-xl:ml-0">
-              <div className="w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4 items-center bg-white dark:bg-opacity-5 border-2 border-transparent hover:border-[#7243EC] rounded-lg cursor-pointer">
+              <div
+                ref={tilt5}
+                className="hover:z-[50] w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4 items-center bg-white dark:bg-[#141726] border border-transparent hover:border-[#7343ecc0] rounded-lg cursor-pointer"
+              >
                 <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                   5
                 </div>
@@ -125,18 +163,21 @@ export default function WebDevelopment(props) {
                 </div>
               </div>
               <div className="max-xl:hidden relative h-36 w-20 border-r-4 border-b-4 border-[#7343ecc0] rounded-br-lg">
-                <div className="absolute -left-3 top-[132px]">
+                <div className="z-[40] absolute -left-3 top-[132px]">
                   <CircleIcon />
                 </div>
               </div>
             </div>
             <div className="flex">
               <div className="max-xl:hidden relative ml-56 h-36 w-[150px] border-l-4 border-b-4 border-[#7343ecc0] rounded-bl-lg">
-                <div className="absolute left-[136px] top-[132px]">
+                <div className="z-[40] absolute left-[136px] top-[132px]">
                   <CircleIcon />
                 </div>
               </div>
-              <div className="w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4  items-center bg-white dark:bg-opacity-5 border-2 border-transparent hover:border-[#7243EC] rounded-lg cursor-pointer">
+              <div
+                ref={tilt6}
+                className="hover:z-[50] w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4  items-center bg-white dark:bg-[#141726] border border-transparent hover:border-[#7343ecc0] rounded-lg cursor-pointer"
+              >
                 <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                   6
                 </div>

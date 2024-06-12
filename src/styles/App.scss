@@ -131,3 +131,12 @@ input[type="file"]::file-selector-button {
     display: none;
   }
 }
+
+::-webkit-scrollbar {
+  @include themify($themes) {
+    background-color: themed("backgroundColor");
+  }
+  width: 7px; height: 4px;
+}
+::-webkit-scrollbar-thumb { background-color: #743EEC; -webkit-border-radius: 1ex; }
+::-webkit-scrollbar-thumb:hover { background-color: #8454ed; -webkit-border-radius: 1ex; cursor: pointer; }
