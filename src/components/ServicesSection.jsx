@@ -83,19 +83,19 @@ export default function ServicesSection() {
                   <div className="h-full">
                     <div className="line-clamp-8 max-xl:line-clamp-4 font-semibold">{t('mobiledev')}</div>
                     <div className="mt-12 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Plattformübergreifende Entwicklung
+                      {t('service.cross-platform')}
                     </div>
                     <div className="mt-4 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Benutzerzentriertes Design
+                      {t('service.user-centered')}
                     </div>
                     <div className="mt-4 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Funktionale Vielfalt
+                      {t('service.diversity')}
                     </div>
                     <div className="mt-4 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Sicherheit und Performance
+                      {t('service.security')}
                     </div>
                     <div className="mt-4 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Fortlaufende Wartung und Support
+                      {t('service.maintenance')}
                     </div>
                   </div>
                   <div
@@ -119,19 +119,19 @@ export default function ServicesSection() {
                   <div className="h-full">
                     <div className="line-clamp-8 max-xl:line-clamp-4 font-semibold">Data 4.0</div>
                     <div className="mt-12 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Datenanalyse
+                      {t('service.data_analysis')}
                     </div>
                     <div className="mt-4 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Daten-engineering
+                      {t('service.data-engineering')}
                     </div>
                     <div className="mt-4 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Data Science
+                      {t('service.data-science')}
                     </div>
                     <div className="mt-4 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Datenvisualisierung
+                      {t('service.data-visualisation')}
                     </div>
                     <div className="mt-4 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Digitale Transformation
+                      {t('service.digital-transformation')}
                     </div>
                   </div>
                   <div
@@ -154,19 +154,19 @@ export default function ServicesSection() {
                   <div className="h-full">
                     <div className="line-clamp-8 max-xl:line-clamp-4 font-semibold">{t('webapp')}</div>
                     <div className="mt-12 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Maßgeschneidertes Webdesign
+                      {t('service.web-design')}
                     </div>
                     <div className="mt-4 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Responsive Entwicklung
+                      {t('service.responsive')}
                     </div>
                     <div className="mt-4 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Frontend- und Backend-Entwicklung
+                      {t('service.front_back')}
                     </div>
                     <div className="mt-4 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      E-Commerce-Lösungen
+                      {t('service.e-commerce')}
                     </div>
                     <div className="mt-4 pl-4 text-[14px] border-l border-[#c4c4c4] dark:border-[#687594]">
-                      Sicherheit und Performance-Optimierung
+                      {t('service.security_performance')}
                     </div>
                   </div>
                   <div

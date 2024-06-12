@@ -68,6 +68,23 @@
       "dataengineering_content": "Our data engineering services help you optimize your data infrastructure and build robust data pipelines. We extract, transform and load data from various sources to create a unified database for your analysis projects. Using proven methods and tools, we develop scalable and reliable data architectures that enable you to efficiently process and analyze large amounts of data.",
       "datascience": "Data Science",
       "datascience_content": "Our data science services help you develop predictive models, identify patterns, and solve complex problems. We use statistical analysis, machine learning and advanced algorithms to derive insights from your data and support data-driven decisions. From customer segmentation to product recommendation, we offer tailored data science solutions that help your company gain competitive advantages and develop innovative products and services."
+    },
+    "service": {
+      "cross-platform": "Cross-platform development",
+      "user-centered": "User centered design",
+      "diversity": "Functional diversity",
+      "security": "Security and performance",
+      "maintenance": "Ongoing maintenance and support",
+      "data_analysis": "Data analysis",
+      "data-engineering": "Data engineering",
+      "data-science": "Data Science",
+      "data-visualisation": "Daten visualisation",
+      "digital-transformation": "Digital transformation",
+      "web-design": "Customized web design",
+      "responsive": "Responsive websites",
+      "front_back": "Front- and Backend Development",
+      "e-commerce": "E-Commerce solutions",
+      "security_performance": "Security and performance optimization "
     }
   }
 }

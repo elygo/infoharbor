@@ -67,6 +67,23 @@
       "dataengineering_content": "Unsere Daten-Engineering-Dienstleistungen helfen Ihnen, Ihre Dateninfrastruktur zu optimieren und robuste Datenpipelines aufzubauen. Wir extrahieren, transformieren und laden Daten aus verschiedenen Quellen, um eine einheitliche Datenbasis für Ihre Analyseprojekte zu schaffen. Mit bewährten Methoden und Tools entwickeln wir skalierbare und zuverlässige Datenarchitekturen, die es Ihnen ermöglichen, große Datenmengen effizient zu verarbeiten und zu analysieren.",
       "datascience": "Data Science",
       "datascience_content": "Unsere Data-Science-Dienstleistungen helfen Ihnen, Vorhersagemodelle zu entwickeln, Muster zu erkennen und komplexe Probleme zu lösen. Wir nutzen statistische Analyse, maschinelles Lernen und fortgeschrittene Algorithmen, um Einblicke aus Ihren Daten zu gewinnen und datengetriebene Entscheidungen zu unterstützen. Von der Kunden segmentierung bis zur Produkt empfehlung bieten wir maßgeschneiderte Data-Science-Lösungen, die Ihr Unternehmen dabei unterstützen, Wettbewerbsvorteile zu erlangen und innovative Produkte und Dienstleistungen zu entwickeln."
+    },
+    "service": {
+      "cross-platform": "Plattformübergreifende Entwicklung",
+      "user-centered": "Benutzerzentriertes Design",
+      "diversity": "Funktionale Vielfalt",
+      "security": "Sicherheit und Performance",
+      "maintenance": "Fortlaufende Wartung und Support",
+      "data_analysis": "Datenanalyse",
+      "data-engineering": "Daten-engineering",
+      "data-science": "Data Science",
+      "data-visualisation": "Datenvisualisierung",
+      "digital-transformation": "Digitale Transformation",
+      "web-design": "Maßgeschneidertes Webdesign",
+      "responsive": "Responsive Webseiten",
+      "front_back": "Front- und Backend-Entwicklung",
+      "e-commerce": "E-Commerce-Lösungen",
+      "security_performance": "Sicherheit und Performance-Optimierung"
     }
   }
 }

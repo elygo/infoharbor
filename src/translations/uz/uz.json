@@ -68,6 +68,23 @@
       "dataengineering_content": "Bizning maʼlumotlar muhandisligi xizmatlari sizga maʼlumotlar infratuzilmangizni optimallashtirish va mustahkam maʼlumotlar quvurlarini qurishda yordam beradi. Biz tahlil loyihalaringiz uchun yagona ma'lumotlar bazasini yaratish uchun turli manbalardan ma'lumotlarni ajratib olamiz, o'zgartiramiz va yuklaymiz. Tasdiqlangan usullar va vositalardan foydalanib, biz katta hajmdagi ma'lumotlarni samarali qayta ishlash va tahlil qilish imkonini beruvchi kengaytiriladigan va ishonchli ma'lumotlar arxitekturasini ishlab chiqamiz.",
       "datascience": "Data Science",
       "datascience_content": "Bizning maʼlumotlar fanimiz xizmatlari sizga bashoratli modellarni ishlab chiqish, naqshlarni aniqlash va murakkab muammolarni hal qilishda yordam beradi. Maʼlumotlaringizdan xulosalar olish va maʼlumotlarga asoslangan qarorlarni qoʻllab-quvvatlash uchun statistik tahlil, mashinani oʻrganish va ilgʻor algoritmlardan foydalanamiz. Mijozlarni segmentatsiyasidan mahsulot tavsiyasiga qadar, biz kompaniyangizga raqobatdosh ustunliklarga ega bo'lish va innovatsion mahsulot va xizmatlarni rivojlantirishga yordam beradigan maxsus ma'lumotlar fanini taklif qilamiz."
+    },
+    "service": {
+      "cross-platform": "Platformalarga mos ilovalar",
+      "user-centered": "Foydalanuvchiga qulay dizayn",
+      "diversity": "Funksional xilma-xillik",
+      "security": "Xavfsizlik va samaradorlik",
+      "maintenance": "Texnik xizmat va qo'llab quvvatlash",
+      "data_analysis": "Ma'lumotlar tahlili",
+      "data-engineering": "Ma'lumotlarni qayta ishlash",
+      "data-science": "Data Science",
+      "data-visualisation": "Ma'lumotlar taqdimoti",
+      "digital-transformation": "Raqamli transformatsiya",
+      "web-design": "Individual veb-dizayn",
+      "responsive": "Adaptiv saytlar",
+      "front_back": "Front- va Backend yechimlar",
+      "e-commerce": "E-Commerce yechimlar",
+      "security_performance": "Xavfsizlik va samaradorlikni optimallashtirish"
     }
   }
 }
