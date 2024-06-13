@@ -83,7 +83,12 @@
       "responsive": "Responsive Webseiten",
       "front_back": "Front- und Backend-Entwicklung",
       "e-commerce": "E-Commerce-Lösungen",
-      "security_performance": "Sicherheit und Performance-Optimierung"
+      "security_performance": "Sicherheit und Performance-Optimierung",
+      "machine_learning":"Maschinelles Lernen",
+      "nlp":"Natural Language Processing (NLP)",
+      "computer_vision":"Computer Vision",
+      "predictive":"Predictive Analytics",
+      "ai_automation":"AI-basierte Automatisierung"
     }
   }
 }

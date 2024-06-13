@@ -85,7 +85,12 @@
       "responsive": "Адаптивные вебсайты",
       "front_back": "Фронт и бекэнд разработка",
       "e-commerce": "E-Commerce решения",
-      "security_performance": "Оптимизация производительности и безопасности"
+      "security_performance": "Оптимизация производительности и безопасности",
+      "machine_learning":"Машинное обучение",
+      "nlp":"Natural Language Processing (NLP)",
+      "computer_vision":"Computer Vision",
+      "predictive":"Предиктивная аналитика",
+      "ai_automation":"Автоматизация на основе ИИ"
     }
   }
 }

@@ -84,7 +84,12 @@
       "responsive": "Adaptiv saytlar",
       "front_back": "Front- va Backend yechimlar",
       "e-commerce": "E-Commerce yechimlar",
-      "security_performance": "Xavfsizlik va samaradorlikni optimallashtirish"
+      "security_performance": "Xavfsizlik va samaradorlikni optimallashtirish",
+      "machine_learning":"Mashina oʻrganuvi (ML)",
+      "nlp":"Natural Language Processing (NLP)",
+      "computer_vision":"Computer Vision",
+      "predictive":"Predictive Analytics",
+      "ai_automation":"\"SI\"ga asoslangan avtomatizatsiya"
     }
   }
 }
