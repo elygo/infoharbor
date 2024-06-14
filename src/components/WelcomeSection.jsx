@@ -1,12 +1,19 @@
-import React from 'react';
-import { useContext, useState, useEffect } from 'react';
+import React, { useContext, useRef } from 'react';
 import { ThemeContext } from '../utils/ThemeContext';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import { RectangleCentral, RectangleSide, RectangleTop } from './Icons';
-import { motion, AnimatePresence } from 'framer-motion';
+import { CircleIcon, RectangleCentral, RectangleSide, RectangleTop } from './Icons';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
 
 export default function WelcomeSection() {
+  const refContent = useRef(null);
+  const refRects = useRef(null);
+  const isInViewContent = useInView(refContent, {
+    margin: '-250px'
+  });
+  const isInViewRects = useInView(refRects, {
+    margin: '-250px'
+  });
   const { theme, setTheme } = useContext(ThemeContext);
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
@@ -17,59 +24,110 @@ export default function WelcomeSection() {
         <div
           className={`${theme === 'dark' ? 'gradient' : 'gradient-light'} absolute top-16 right-20 w-[550px] h-[550px] max-md:hidden`}
         ></div>
-        <div className="static z-40 flex gap-12 items-end justify-between h-full w-full max-2xl:px-8">
+        <div className="static z-40 flex gap-12 mt-12 items-center justify-between h-full w-full max-2xl:px-8">
           <div className="max-md:w-full md:w-1/2 flex flex-col justify-between items-left gap-8 z-10 max-md:mt-12">
-            <div className="w-full mt-24 max-md:mt-12 flex">
-              <div className="w-1 mr-10 bg-gradient-to-b from-[#EEEEEE] via-[#743EEC] to-[#EEEEEE] dark:bg-gradient-to-b dark:from-[#070B1A] dark:via-[#743EEC] dark:to-[#070B1A] max-md:hidden"></div>
-              <div className="w-full flex flex-col gap-8 h-full max-md:items-center">
-                <AnimatePresence mode="wait">
+            <div className="w-full max-md:mt-0 flex" ref={refContent}>
+              <AnimatePresence>
+                <motion.div
+                  style={{ originY: 0, width: '4px' }}
+                  className="mr-12 bg-gradient-to-b from-[#743EEC] via-[#743EEC] to-transparent my-8 max-md:hidden"
+                  variants={{
+                    hidden: {
+                      y: 0,
+                      opacity: 0
+                    },
+                    visible: {
+                      y: 0,
+                      opacity: 1
+                    }
+                  }}
+                  animate={{
+                    opacity: isInViewContent ? 1 : 0,
+                    transform: isInViewContent ? 'scaleY(1)' : 'scaleY(0)'
+                  }}
+                  transition={{
+                    duration: 2
+                  }}
+                ></motion.div>
+              </AnimatePresence>
+              <div className="w-full gap-8 mb-16 mt-8 h-full" ref={refContent}>
+                <AnimatePresence mode="wait" initial={false}>
                   <motion.div
-                    key={'empty'}
-                    initial={{ x: 40, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    exit={{ x: -40, opacity: 0 }}
-                    transition={{ duration: 2.5 }}
+                    className="flex flex-col  max-md:items-center"
+                    variants={{
+                      initial: {
+                        opacity: 0
+                      },
+                      hidden: {
+                        opacity: 0
+                      },
+                      visible: {
+                        opacity: isInViewContent ? 1 : 0
+                      }
+                    }}
+                    animate={{
+                      opacity: isInViewContent ? 1 : 0,
+                      transform: isInViewContent ? 'translateX(0px)' : 'translateX(-50px) '
+                    }}
+                    transition={{
+                      duration: 1
+                    }}
                   >
                     <div className="uppercase text-[50px] max-md:text-[32px] font-bold">{t('welcome')}</div>
-                  </motion.div>
-                </AnimatePresence>
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={'empty'}
-                    initial={{ x: 100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    exit={{ x: -40, opacity: 0 }}
-                    transition={{ duration: 3.5 }}
-                  >
-                    <div className="text-[18px] leading-10 max-md:text-[14px] max-md:leading-8 ">
+
+                    <div className="text-[18px] mt-8 leading-10 max-md:text-[14px] max-md:leading-8 ">
                       {t('welcome_content')}
+                    </div>
+
+                    <div
+                      className="cursor-pointer max-md bg-white text-black text-center mt-8 py-3 w-36 rounded-lg text-[16px] hover:bg-gradient-to-r from-[#763AED] to-[#6663ED] hover:text-white hover:scale-110 hover:origin-top-left"
+                      onClick={() => {
+                        navigate('/about');
+                      }}
+                    >
+                      {t('more')}
                     </div>
                   </motion.div>
                 </AnimatePresence>
-                <div
-                  className="cursor-pointer bg-white text-black text-center py-3 w-36 rounded-lg text-[16px] hover:bg-gradient-to-r from-[#763AED] to-[#6663ED] hover:text-white hover:scale-110 hover:origin-top-left"
-                  onClick={() => {
-                    navigate('/about');
-                  }}
-                >
-                  {t('more')}
-                </div>
               </div>
             </div>
           </div>
-          <div className="max-md:hidden md:w-1/2 relative z-10  2xl:ml-32 max-md:mt-12">
-            <div className="animate-[bounce_8s_ease-in-out_infinite]">
-              <RectangleSide />
-            </div>
-            <div className="z-20 animate-bounce-slow absolute top-2 left-36">
-              <RectangleCentral />
-            </div>
-            <div className="z-30 animate-[bounce_10s_ease-in-out_infinite] absolute left-48 -top-4">
-              <RectangleTop />
-            </div>
-            <div className="z-40 animate-bounce-medium absolute left-80 top-24">
-              <RectangleSide />
-            </div>
+          <div className="max-md:hidden md:w-1/2 relative z-10 2xl:ml-32 max-md:mt-12" ref={refRects}>
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.div
+                variants={{
+                  initial: {
+                    opacity: 0
+                  },
+                  hidden: {
+                    opacity: 0
+                  },
+                  visible: {
+                    opacity: isInViewRects ? 1 : 0
+                  }
+                }}
+                animate={{
+                  opacity: isInViewRects ? 1 : 0,
+                  transform: isInViewRects ? 'translateX(0px)' : 'translateX(50px) '
+                }}
+                transition={{
+                  duration: 1
+                }}
+              >
+                <div className="animate-[bounce_8s_ease-in-out_infinite]">
+                  <RectangleSide />
+                </div>
+                <div className="z-20 animate-bounce-slow absolute top-2 left-36">
+                  <RectangleCentral />
+                </div>
+                <div className="z-30 animate-[bounce_10s_ease-in-out_infinite] absolute left-48 -top-4">
+                  <RectangleTop />
+                </div>
+                <div className="z-40 animate-bounce-medium absolute left-80 top-24">
+                  <RectangleSide />
+                </div>
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
       </div>

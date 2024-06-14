@@ -17,24 +17,6 @@ import DataSection from './components/DataSection';
 import AiSection from './components/AiSection';
 import MobileSection from './components/MobileSection';
 
-const useMousePosition = () => {
-  const [mousePosition, setMousePosition] = useState({ x: null, y: null });
-
-  useEffect(() => {
-    const updateMousePosition = (ev) => {
-      setMousePosition({ x: ev.clientX, y: ev.clientY });
-    };
-
-    window.addEventListener('mousemove', updateMousePosition);
-
-    return () => {
-      window.removeEventListener('mousemove', updateMousePosition);
-    };
-  }, []);
-
-  return mousePosition;
-};
-
 function App() {
   const getDefaultTheme = () => {
     const localStorageTheme = localStorage.getItem('default-theme');
@@ -53,8 +35,6 @@ function App() {
   useEffect(() => {
     document.title = t('infoharbor');
   }, [i18n.language]);
-
-  const mousePosition = useMousePosition();
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>

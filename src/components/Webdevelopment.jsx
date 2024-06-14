@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { CircleIcon, SIcon } from './Icons';
 import Footer from './Footer';
 import VanillaTilt from 'vanilla-tilt';
+import MouseGradient from '../utils/MouseGradient';
 
 export default function WebDevelopment(props) {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -73,19 +74,19 @@ export default function WebDevelopment(props) {
                   <CircleIcon />
                 </div>
               </div>
-              <div
-                ref={tilt}
+              <MouseGradient
+                refa={tilt}
                 className="hover:z-[50] w-[987px] h-[193px] max-xl:w-full max-xl:h-full flex gap-10 py-2 max-xl:gap-4 max-xl:px-4 px-10 items-center bg-white dark:bg-[#141726] border border-transparent hover:border-[#7343ecc0] rounded-lg cursor-pointer"
               >
                 <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                   1
                 </div>
                 <div>Maßgeschneidertes Webdesign</div>
-                <div className="text-[16px] dark:text-[#ADB5BF] border-l border-gray-500 pl-6">
+                <div className="text-[16px] border-l border-gray-500 pl-6">
                   Wir gestalten Webseiten, die Ihre Marke repräsentieren und Ihre Zielgruppe ansprechen. Unser Fokus
                   liegt auf Benutzerfreundlichkeit und Ästhetik, um ein beeindruckendes Online-Erlebnis zu schaffen
                 </div>
-              </div>
+              </MouseGradient>
             </div>
             <div className="flex">
               <div className="max-xl:hidden relative ml-56 h-36 w-[150px] border-l-4 border-b-4 border-[#7343ecc0] rounded-bl-lg">
@@ -93,34 +94,34 @@ export default function WebDevelopment(props) {
                   <CircleIcon />
                 </div>
               </div>
-              <div
-                ref={tilt2}
+              <MouseGradient
+                refa={tilt2}
                 className="hover:z-[50] w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4 items-center bg-white dark:bg-[#141726] border border-transparent hover:border-[#7343ecc0] rounded-lg cursor-pointer"
               >
                 <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                   2
                 </div>
                 <div>Maßgeschneidertes Webdesign</div>
-                <div className="text-[16px] dark:text-[#ADB5BF] border-l border-gray-500 pl-6">
+                <div className="text-[16px] border-l border-gray-500 pl-6">
                   Wir gestalten Webseiten, die Ihre Marke repräsentieren und Ihre Zielgruppe ansprechen. Unser Fokus
                   liegt auf Benutzerfreundlichkeit und Ästhetik, um ein beeindruckendes Online-Erlebnis zu schaffen
                 </div>
-              </div>
+              </MouseGradient>
             </div>
             <div className="flex ml-28 max-xl:ml-0">
-              <div
-                ref={tilt3}
+              <MouseGradient
+                refa={tilt3}
                 className="hover:z-[50] w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4  items-center bg-white dark:bg-[#141726] border border-transparent hover:border-[#7343ecc0] rounded-lg cursor-pointer"
               >
                 <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                   3
                 </div>
                 <div>Maßgeschneidertes Webdesign</div>
-                <div className="text-[16px] dark:text-[#ADB5BF] border-l border-gray-500 pl-6">
+                <div className="text-[16px] border-l border-gray-500 pl-6">
                   Wir gestalten Webseiten, die Ihre Marke repräsentieren und Ihre Zielgruppe ansprechen. Unser Fokus
                   liegt auf Benutzerfreundlichkeit und Ästhetik, um ein beeindruckendes Online-Erlebnis zu schaffen
                 </div>
-              </div>
+              </MouseGradient>
               <div className="max-xl:hidden relative h-36 w-20 border-r-4 border-b-4 border-[#7343ecc0] rounded-br-lg">
                 <div className="z-[40] absolute -left-3 top-[132px]">
                   <CircleIcon />
@@ -134,34 +135,34 @@ export default function WebDevelopment(props) {
                   <CircleIcon />
                 </div>
               </div>
-              <div
-                ref={tilt4}
+              <MouseGradient
+                refa={tilt4}
                 className="hover:z-[50] w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4  items-center bg-white dark:bg-[#141726] border border-transparent hover:border-[#7343ecc0] rounded-lg cursor-pointer"
               >
                 <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                   4
                 </div>
                 <div>Maßgeschneidertes Webdesign</div>
-                <div className="text-[16px] dark:text-[#ADB5BF] border-l border-gray-500 pl-6">
+                <div className="text-[16px] border-l border-gray-500 pl-6">
                   Wir gestalten Webseiten, die Ihre Marke repräsentieren und Ihre Zielgruppe ansprechen. Unser Fokus
                   liegt auf Benutzerfreundlichkeit und Ästhetik, um ein beeindruckendes Online-Erlebnis zu schaffen
                 </div>
-              </div>
+              </MouseGradient>
             </div>
             <div className="flex ml-28 max-xl:ml-0">
-              <div
-                ref={tilt5}
+              <MouseGradient
+                refa={tilt5}
                 className="hover:z-[50] w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4 items-center bg-white dark:bg-[#141726] border border-transparent hover:border-[#7343ecc0] rounded-lg cursor-pointer"
               >
                 <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                   5
                 </div>
                 <div>Maßgeschneidertes Webdesign</div>
-                <div className="text-[16px] dark:text-[#ADB5BF] border-l border-gray-500 pl-6">
+                <div className="text-[16px] border-l border-gray-500 pl-6">
                   Wir gestalten Webseiten, die Ihre Marke repräsentieren und Ihre Zielgruppe ansprechen. Unser Fokus
                   liegt auf Benutzerfreundlichkeit und Ästhetik, um ein beeindruckendes Online-Erlebnis zu schaffen
                 </div>
-              </div>
+              </MouseGradient>
               <div className="max-xl:hidden relative h-36 w-20 border-r-4 border-b-4 border-[#7343ecc0] rounded-br-lg">
                 <div className="z-[40] absolute -left-3 top-[132px]">
                   <CircleIcon />
@@ -174,19 +175,19 @@ export default function WebDevelopment(props) {
                   <CircleIcon />
                 </div>
               </div>
-              <div
-                ref={tilt6}
+              <MouseGradient
+                refa={tilt6}
                 className="hover:z-[50] w-[987px] h-[193px] max-xl:w-full max-xl:h-full mt-12 max-xl:mt-0 flex gap-8 py-2 px-6 max-xl:gap-4 max-xl:px-4  items-center bg-white dark:bg-[#141726] border border-transparent hover:border-[#7343ecc0] rounded-lg cursor-pointer"
               >
                 <div className="h-12 w-12 p-6 flex items-center justify-center text-white dark:bg-transparent bg-[#7245ED] dark:border rounded-full text-[24px] font-semibold">
                   6
                 </div>
                 <div>Maßgeschneidertes Webdesign</div>
-                <div className="text-[16px] dark:text-[#ADB5BF] border-l border-gray-500 pl-6">
+                <div className="text-[16px] border-l border-gray-500 pl-6">
                   Wir gestalten Webseiten, die Ihre Marke repräsentieren und Ihre Zielgruppe ansprechen. Unser Fokus
                   liegt auf Benutzerfreundlichkeit und Ästhetik, um ein beeindruckendes Online-Erlebnis zu schaffen
                 </div>
-              </div>
+              </MouseGradient>
             </div>
           </div>
         </div>
