@@ -19,7 +19,7 @@ export default function AiSection(props) {
 
   return (
     <div>
-      <div className="max-w-[1364px] min-h-[calc(100vh-174px)] mx-auto z-20 dark:text-white relative max-2xl:h-full my-8">
+      <div className="max-w-[1364px] min-h-[calc(100vh-353px)] mx-auto z-20 dark:text-white relative max-2xl:h-full my-8">
         <div
           className={`${theme === 'dark' ? 'gradient' : 'gradient-light'} absolute top-48 -right-60 w-[550px] h-[550px] max-2xl:hidden`}
         ></div>

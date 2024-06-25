@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { AdIcon, ArrowRightIcon, InfoharborIcon, InfoharborLogo } from '../components/Icons';
 import parse from 'html-react-parser';
 import Footer from '../components/Footer';
+import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
 
 export default function NewsPage() {
   const { t, i18n } = useTranslation();
@@ -33,7 +34,8 @@ export default function NewsPage() {
 
   return (
     <div>
-      <div className="min-h-[calc(100vh-174px)] max-w-[1364px] mx-auto relative max-2xl:px-8 py-8">
+      <div className="min-h-[calc(100vh-353px)] max-w-[1364px] mx-auto relative max-2xl:px-8 py-4">
+        <Breadcrumbs />
         <div
           className={`${theme === 'dark' ? 'gradient' : 'gradient-light'} absolute -top-72 -right-96 w-[550px] h-[550px] z-0 max-2xl:hidden`}
         ></div>

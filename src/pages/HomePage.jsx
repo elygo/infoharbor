@@ -9,7 +9,7 @@ import { SectionFrameLeft } from '../utils/SectionFrameLeft';
 export default function HomePage() {
   return (
     <div>
-      <div className="min-h-[calc(100vh-174px)]">
+      <div className="min-h-[calc(100vh-353px)]">
         <WelcomeSection />
         <ProjectsSection />
         <TechnologiesSection />

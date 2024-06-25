@@ -43,7 +43,7 @@ export default function WebDevelopment(props) {
 
   return (
     <div>
-      <div className="max-w-[1364px] min-h-[calc(100vh-174px)] mx-auto z-20 dark:text-white relative max-2xl:h-full">
+      <div className="max-w-[1364px] min-h-[calc(100vh-353px)] mx-auto z-20 dark:text-white relative max-2xl:h-full">
         <div
           className={`${theme === 'dark' ? 'gradient' : 'gradient-light'} absolute top-60 -left-20 w-[550px] h-[550px] max-2xl:hidden`}
         ></div>

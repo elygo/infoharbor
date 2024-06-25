@@ -19,7 +19,7 @@ export default function DataSection(props) {
 
   return (
     <div>
-      <div className="max-w-[1364px] min-h-[calc(100vh-174px)] mx-auto z-20 dark:text-white relative max-2xl:h-full">
+      <div className="max-w-[1364px] min-h-[calc(100vh-353px)] mx-auto z-20 dark:text-white relative max-2xl:h-full">
         <div className="flex my-10">
           <div className="w-3 bg-gradient-to-b from-[#EEEEEE] via-[#743EEC] to-[#EEEEEE] dark:bg-gradient-to-b dark:from-[#070B1A] dark:via-[#743EEC] dark:to-[#070B1A]"></div>
           <div className="flex flex-col">
@@ -73,9 +73,7 @@ export default function DataSection(props) {
                     <GreenTickIcon width={33} height={33} />
                   </div>
 
-                  <div className="mt-4 leading-9">
-                  {t('datapage.datascience_content')}
-                  </div>
+                  <div className="mt-4 leading-9">{t('datapage.datascience_content')}</div>
                 </div>
               </div>
             </div>

@@ -7,6 +7,7 @@ import { AdIcon, ArrowRightIcon, ClipIcon, InfoharborLogo } from '../components/
 import toast from 'react-hot-toast';
 import parse from 'html-react-parser';
 import Footer from './Footer';
+import Breadcrumbs from './breadcrumbs/Breadcrumbs';
 
 export default function CareerDetail() {
   const { id } = useParams();
@@ -108,8 +109,9 @@ export default function CareerDetail() {
 
   return (
     <div>
-      <div className="min-h-[calc(100vh-174px)] max-w-[1364px] mx-auto relative py-8 max-2xl:px-8">
-        <div className="flex w-full h-full gap-8 max-md:flex-col">
+      <div className="min-h-[calc(100vh-353px)] max-w-[1364px] mx-auto relative py-4 max-2xl:px-8">
+        <Breadcrumbs />
+        <div className="flex w-full h-full gap-8 pt-4 max-md:flex-col">
           <AnimatePresence mode="wait">
             <motion.div
               initial={{ x: 100, opacity: 0 }}

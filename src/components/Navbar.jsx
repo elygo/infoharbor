@@ -82,7 +82,7 @@ export default function Navbar(props) {
                 <NavLink
                   key={item.id}
                   className={({ isActive }) => {
-                    return `max-2xl:hidden px-8 z-30 h-[calc(100%+1px)] flex items-center relative ${theme === 'dark' ? 'before:bg-[#7638EC]' : 'before:bg-[#7638EC] border-[#7638EC]'} ${isActive ? 'bg-gradient-to-b from-[#7638EC] to-[#6665ED] text-white' : "before:content-[''] before:absolute   before:w-full before:h-[1px] before:bottom-0 before:left-0  before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300"} hover:cursor-pointer`;
+                    return `max-2xl:hidden px-8 z-30 h-[calc(100%+3px)] flex items-center relative ${theme === 'dark' ? 'before:bg-[#7638EC]' : 'before:bg-[#7638EC] border-[#7638EC]'} ${isActive ? 'bg-gradient-to-b from-[#7638EC] to-[#6665ED] text-white' : "before:content-[''] before:absolute   before:w-full before:h-[1.5px] before:bottom-0 before:left-0  before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300"} hover:cursor-pointer`;
                   }}
                   to={item.link}
                 >

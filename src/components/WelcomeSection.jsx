@@ -2,7 +2,7 @@ import React, { useContext, useRef } from 'react';
 import { ThemeContext } from '../utils/ThemeContext';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import { CircleIcon, RectangleCentral, RectangleSide, RectangleTop } from './Icons';
+import { RectangleCentral, RectangleSide, RectangleTop } from './Icons';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 
 export default function WelcomeSection() {
@@ -24,7 +24,7 @@ export default function WelcomeSection() {
         <div
           className={`${theme === 'dark' ? 'gradient' : 'gradient-light'} absolute top-16 right-20 w-[550px] h-[550px] max-md:hidden`}
         ></div>
-        <div className="static z-40 flex gap-12 mt-12 items-center justify-between h-full w-full max-2xl:px-8">
+        <div className="static z-40 flex gap-12 mt-24 max-2xl:mt-12 items-center justify-between h-full w-full max-2xl:px-8">
           <div className="max-md:w-full md:w-1/2 flex flex-col justify-between items-left gap-8 z-10 max-md:mt-12">
             <div className="w-full max-md:mt-0 flex" ref={refContent}>
               <AnimatePresence>
@@ -103,12 +103,12 @@ export default function WelcomeSection() {
                     opacity: 0
                   },
                   visible: {
-                    opacity: isInViewRects ? 1 : 0
+                    opacity: isInViewContent ? 1 : 0
                   }
                 }}
                 animate={{
-                  opacity: isInViewRects ? 1 : 0,
-                  transform: isInViewRects ? 'translateX(0px)' : 'translateX(50px) '
+                  opacity: isInViewContent ? 1 : 0,
+                  transform: isInViewContent ? 'translateX(0px)' : 'translateX(50px) '
                 }}
                 transition={{
                   duration: 1
@@ -131,6 +131,36 @@ export default function WelcomeSection() {
           </div>
         </div>
       </div>
+      {/* <div className="w-full flex justify-center items-center">
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            variants={{
+              initial: {
+                opacity: 0
+              },
+              hidden: {
+                opacity: 0
+              },
+              visible: {
+                opacity: isInViewContent ? 1 : 0
+              }
+            }}
+            animate={{
+              opacity: isInViewContent ? 1 : 0,
+              transform: isInViewContent ? 'translate(0px)' : 'translateX(0px) '
+            }}
+            transition={{
+              duration: 1
+            }}
+          >
+            <div className="w-8 h-14 absolute m-auto">
+              <div className="w-[16px] p-[9px_8px] h-[35px] border-2 border-[#AAA6C3] rounded-full opacity-75 box-content">
+                <div className="w-[16px] h-[16px] rounded-full bg-[#AAA6C3] animate-scroll"></div>
+              </div>
+            </div>
+          </motion.div>
+        </AnimatePresence>
+      </div> */}
     </div>
   );
 }

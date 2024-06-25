@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../utils/ThemeContext';
-import { CallIcon, LocationIcon, MailIcon, InfoharborIcon, ArrowRightIcon } from './Icons';
+import { CallIcon, LocationIcon, MailIcon, InfoharborIcon, ArrowRightIcon, InfoharborLogo } from './Icons';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 export default function Footer() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -24,9 +24,52 @@ export default function Footer() {
   }, []);
 
   return (
-    <div className="bg-[#ffffff6b] dark:bg-[#2B2A30] h-[81px] mx-auto z-20 dark:text-white relative max-2xl:px-8">
-      <div className="border-t dark:border-[#ffffff33] flex flex-col justify-center items-center gap-8 max-md:mt-6 max-md:gap-4">
-        <div className="text-[17px] dark:text-[#ffffff8e] mt-8 max-xl:text-[14px]">{t('copyright')}</div>
+    <div className="bg-[#ffffff6b] border-t dark:border-[#ffffff33]  dark:bg-[#2B2A30] min-h-[260px] mx-auto z-20 dark:text-white relative max-2xl:px-8">
+      <div className="max-w-[1364px] mx-auto flex justify-between max-md:flex-col max-md:items-center">
+        <div className="mt-8 max-md:mt-2">
+          <InfoharborIcon width={200} color={theme === 'dark' ? '#fff' : '#000'} />
+          <div className="text-[17px] max-md:text-center dark:text-[#ffffff8e] mt-8 max-md:mt-2 max-xl:text-[14px]">
+            {t('copyright')}
+          </div>
+        </div>
+        <div className="flex gap-20 max-md:mt-4 max-md:mb-4 max-lg:gap-8 max-md:gap-4 max-xs:flex-col">
+          <div className="flex flex-col gap-4 text-[17px] mt-8 max-md:mt-0 max-xl:text-[14px]">
+            <div className="font-semibold dark:font-medium">{t('services')}</div>
+            <NavLink to={'/mobile'} className="dark:text-[#ffffff8e]">
+              {t('mobile')}
+            </NavLink>
+            <NavLink to={'/data'} className="dark:text-[#ffffff8e]">
+              Data 4.0
+            </NavLink>
+            <NavLink to={'/webdev'} className="dark:text-[#ffffff8e]">
+              {t('web')}
+            </NavLink>
+            <NavLink to={'/intelligence'} className="dark:text-[#ffffff8e]">
+              {t('ai')}
+            </NavLink>
+          </div>
+          <div className="flex flex-col gap-4  text-[17px] mt-8 max-md:mt-0 max-xl:text-[14px]">
+            <div className="font-semibold dark:font-medium">{t('technologies')}</div>
+            <div className="dark:text-[#ffffff8e]">Front-End</div>
+            <div className="dark:text-[#ffffff8e]">Back-End</div>
+            <div className="dark:text-[#ffffff8e]">Big Data</div>
+          </div>
+          <div className="flex flex-col gap-4 text-[17px] mt-8 max-md:mt-0  max-xl:text-[14px]">
+            <div className="font-semibold dark:font-medium">{t('company')}</div>
+            <NavLink to={'/contact'} className="dark:text-[#ffffff8e]">
+              {t('contact')}
+            </NavLink>
+          </div>
+          <div className="flex flex-col gap-4  text-[17px] mt-8 max-md:mt-0  max-xl:text-[14px]">
+            <div className="font-semibold dark:font-medium">{t('resources')}</div>
+            <NavLink to={'/privacy'} className="dark:text-[#ffffff8e]">
+              {t('privacy policy')}
+            </NavLink>
+            <NavLink to={'/cookie'} className="dark:text-[#ffffff8e]">
+              {t('cookie policy')}
+            </NavLink>
+          </div>
+        </div>
       </div>
       {scrollTop > 50 ? (
         <div

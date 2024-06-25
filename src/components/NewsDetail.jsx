@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import Footer from './Footer';
+import Breadcrumbs from './breadcrumbs/Breadcrumbs';
 
 export default function NewsDetail() {
   const { id } = useParams();
@@ -40,9 +41,10 @@ export default function NewsDetail() {
 
   return (
     <div>
-      <div className="min-h-[calc(100vh-174px)] max-w-[1364px] mx-auto z-40 relative py-8">
+      <div className="min-h-[calc(100vh-353px)] max-w-[1364px] mx-auto z-40 relative py-8">
         <div className="flex w-full h-full gap-8">
           <div className="w-4/5 h-full pr-8 max-lg:w-full max-lg:px-8 max-2xl:px-6">
+            <Breadcrumbs />
             {newsId ? (
               <div className="flex flex-col gap-4">
                 <div className="text-[24px] font-bold">{newsId.title}</div>

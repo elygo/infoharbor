@@ -6,6 +6,7 @@ import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
+import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
 
 export default function NewsPage() {
   const { i18n } = useTranslation();
@@ -31,11 +32,12 @@ export default function NewsPage() {
 
   return (
     <div>
-      <div className="min-h-[calc(100vh-174px)] max-w-[1364px] mx-auto z-40 relative max-2xl:px-8">
+      <div className="min-h-[calc(100vh-353px)] max-w-[1364px] mx-auto z-40 relative max-2xl:px-8 py-4">
+        <Breadcrumbs />
         <div
           className={`${theme === 'dark' ? 'gradient' : 'gradient-light'} absolute -top-72 -right-96 w-[550px] h-[550px] z-0 max-2xl:hidden`}
         ></div>
-        <div className="flex flex-wrap gap-8 py-12 hover:cursor-pointer relative z-50 max-2xl:justify-center">
+        <div className="flex flex-wrap gap-8 py-6 hover:cursor-pointer relative z-50 max-2xl:justify-center">
           {news?.map((item, index) => {
             return (
               <AnimatePresence mode="wait" key={index}>

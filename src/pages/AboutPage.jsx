@@ -6,6 +6,7 @@ import i18n from '../../i18n';
 import parse from 'html-react-parser';
 import { ThemeContext } from '../utils/ThemeContext';
 import Footer from '../components/Footer';
+import Breadcrumbs from '../components/breadcrumbs/Breadcrumbs';
 
 export default function AboutPage() {
   const { t } = useTranslation();
@@ -28,7 +29,8 @@ export default function AboutPage() {
 
   return (
     <div>
-      <div className="py-8 min-h-[calc(100vh-174px)] max-w-[1364px] mx-auto z-40 relative max-2xl:px-8">
+      <div className="py-4 min-h-[calc(100vh-353px)] max-w-[1364px] mx-auto z-40 relative max-2xl:px-8">
+        <Breadcrumbs />
         <div
           className={`${theme === 'dark' ? 'gradient' : 'gradient-light'} absolute -top-72 -right-96 w-[550px] h-[550px] z-0 max-2xl:hidden`}
         ></div>
