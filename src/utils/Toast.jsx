@@ -7,7 +7,7 @@ import { Toaster, ToastIcon, resolveValue } from 'react-hot-toast';
  */
 export function TailwindToaster() {
   return (
-    <Toaster>
+    <Toaster position="bottom-center">
       {(t) => (
         <Transition
           appear
@@ -16,7 +16,7 @@ export function TailwindToaster() {
           enter="transition-all duration-150"
         >
           <ToastIcon toast={t} />
-          <p className="px-4 ">{resolveValue(t.message, t)}</p>
+          <p className="px-4">{resolveValue(t.message, t)}</p>
         </Transition>
       )}
     </Toaster>

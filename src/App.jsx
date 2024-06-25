@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ThemeContext } from './utils/ThemeContext';
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import NewsDetail from './components/NewsDetail';
 import CareerDetail from './components/CareerDetail';
@@ -16,6 +16,9 @@ import WebDevelopment from './components/Webdevelopment';
 import DataSection from './components/DataSection';
 import AiSection from './components/AiSection';
 import MobileSection from './components/MobileSection';
+import PrivacyPage from './pages/PrivacyPage';
+import CookiePage from './pages/CookiePage';
+import showCookieConsent from './utils/Cookies';
 
 function App() {
   const getDefaultTheme = () => {
@@ -29,6 +32,10 @@ function App() {
   const basename = document.querySelector('base')?.getAttribute('href') ?? '/';
 
   useEffect(() => {
+    showCookieConsent();
+  }, []);
+
+  useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme == 'dark' ? 'dark' : 'light');
   }, [theme]);
 
@@ -38,7 +45,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <HashRouter basename={basename}>
+      <BrowserRouter basename={basename}>
         <div
           className={`theme-${theme} mx-auto bg-lightBackground text-lightText dark:text-darkText dark:bg-darkBackground`}
         >
@@ -58,13 +65,14 @@ function App() {
               <Route path="/career/:id" element={<CareerDetail />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="/cookie" element={<CookiePage />} />
               <Route path="*" element={<NotfoundPage />} />
             </Routes>
-            {/* <Footer /> */}
           </div>
           <TailwindToaster />
         </div>
-      </HashRouter>
+      </BrowserRouter>
     </ThemeContext.Provider>
   );
 }
