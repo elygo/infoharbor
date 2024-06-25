@@ -7,6 +7,8 @@
     "allnews": "All news",
     "cooperation": "Cooperation",
     "copyright": "© All rights reserved.",
+    "company": "Company",
+    "resources": "Resources",
     "management": "Management",
     "career": "Career",
     "pagenotfound": "Page is not found!",
@@ -21,7 +23,8 @@
     "technologies": "Technologies",
     "ai": "Artificial Intelligence",
     "webapp": "Web applications development",
-    "mobile": "Mobile",
+    "mobile": "Mobile apps",
+    "web": "Web apps",
     "websitedev": "Web-sites development",
     "appdev": "Applications development",
     "design": "Design building",
@@ -59,7 +62,12 @@
     "qa": "Questions and answers",
     "menu": "Menu",
     "team": "Our team",
-    "social": "Social network pages",    
+    "social": "Social network pages",
+    "privacy policy": "Privacy policy",
+    "cookie policy": "Cookie policy",
+    "accept": "Accept",
+    "ignore": "Ignore",
+    "cookieContent": "We use cookies to improve your experience. By using our site, you agree to our use of cookies.",
     "datapage": {
       "title": "Our data solutions offer a comprehensive range of services for analyzing, processing and interpreting your data to gain valuable insights and make informed decisions. With a combination of expertise, advanced technologies and proven methods, we help you unlock the full value of your data and advance your business.",
       "dataanalysis": "Data analysis",
@@ -90,6 +98,23 @@
       "computer_vision":"Computer Vision",
       "predictive":"Predictive Analytics",
       "ai_automation":"AI-based Automation"
+    },
+    "cookiepage": {
+      "title": "Cookie Policy",
+      "intro": "<strong>Introduction</strong>This Cookie Policy explains how we, Infoharbor, use cookies and similar technologies to recognize you when you visit our website. It describes what these technologies are, why we use them, and your rights to control our use of them.",
+      "cookies": "<strong>What are cookies?</strong> Cookies are small data files that are stored on your computer or mobile device when you visit a website. Cookies are widely used to enable websites to function or to function more efficiently, as well as to provide information to the owners of the site.",
+      "usage": "<strong>Why do we use cookies?</strong> We use cookies for several reasons:",
+      "reasons":"<ul><li><strong>Essential Cookies:</strong>These cookies are necessary for the basic functionality of our website and allow you to navigate and use its features.</li><li><strong>Personalization Cookies:</strong>With these cookies, our website can consider the information you provide and offer you enhanced and personalized features.</li><li><strong>Marketing Cookies:</strong>These cookies are used to make advertising messages more relevant to you. They also perform functions such as preventing the same ad from continuously reappearing.</li></ul>",
+      "other": "<strong>How can you manage cookies?</strong> You can manage your cookie settings at any time on our Cookie Settings page. There you can adjust or withdraw your consent. <strong>Use of Third-Party Cookies</strong> We collaborate with third parties who may also set cookies on your device when you visit our website to enable them to deliver the services described in their privacy policies. These cookies are primarily intended to enhance our content and your user experience. <strong>Duration of Cookie Storage</strong> Most of our cookies are 'session cookies,' which are deleted once you close your browser. Other cookies, known as 'persistent cookies,' remain stored on your device until they expire or you delete them. The exact duration of storage varies depending on the specific cookie, but we follow best practices to ensure that cookies are not stored longer than necessary. <strong>Additional Information</strong> We do not share personal data from cookies with unaffiliated third parties. If you have any questions about our use of cookies, please contact us at contact@infoharbor.de."
+    },
+    "privacypage": {
+      "title": "Privacy Policy",
+      "intro": "<strong>1. General Information</strong> This Privacy Policy informs you about the type, scope, and purpose of the processing of personal data (hereinafter referred to as 'data') within our online offer and the related websites, functions, and content as well as external online presences, such as our social media profiles (hereinafter collectively referred to as 'online offer'). Regarding the terms used, such as 'processing' or 'controller,' we refer to the definitions in Article 4 of the General Data Protection Regulation (GDPR).",
+      "address": "<strong>Controller:</strong> InfoHarbor, Hansastraße 116 13088 Berlin info@infoharbor.de",
+      "types": "<strong>2. Types of processed data:</strong> <ul><li>Inventory data (e.g., names, addresses);</li><li>Contact data (e.g., email, phone numbers);</li><li>Content data (e.g., text entries, photographs, videos);</li><li>Usage data (e.g., visited websites, interest in content, access times);</li><li>Meta/communication data (e.g., device information, IP addresses).</li></ul>",
+      "aim": "<strong>3. Purpose of processing:</strong> <ul><li>Providing the online offer, its functions, and content;</li><li>Responding to contact inquiries and communicating with users;</li><li>Security measures;</li><li>Reach measurement/marketing.</li></ul>",
+      "techno": "<strong>4. Technologies used:</strong> <ul><li>Cookies: We use cookies on our site, as explained in our Cookie Policy;</li><li>Analysis tools: We use analysis tools to measure and analyze the use of our online offer.</li></ul>",
+      "other": "<strong>5. Security measures</strong>In accordance with Article 32 of the GDPR, we take appropriate technical and organizational measures, considering the state of the art, implementation costs, and the nature, scope, circumstances, and purposes of the processing, as well as the varying likelihood and severity of the risk to the rights and freedoms of natural persons, to ensure a level of security appropriate to the risk. <strong>6. Transfer of data to third parties and third-party providers</strong> Your data will only be transferred to third parties within the framework of legal requirements. We only share your data with third parties if, for example, it is necessary for contract purposes based on Article 6(1)(b) GDPR or based on legitimate interests according to Article 6(1)(f) GDPR for the economic and effective operation of our business. <strong>7. Rights of the data subjects</strong> You have the right to request confirmation as to whether data concerning you is being processed, to obtain information about this data, and to receive further information and a copy of the data in accordance with Article 15 GDPR. <strong>8. Right to object</strong> You have the right to object at any time to the future processing of data concerning you in accordance with Article 21 GDPR. <strong>9. Changes to the Privacy Policy</strong> We reserve the right to change the Privacy Policy to adapt it to changed legal situations or in the event of changes to the service or data processing."
     }
   }
 }

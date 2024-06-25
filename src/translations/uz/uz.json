@@ -7,7 +7,9 @@
     "news": "Yangiliklar",
     "allnews": "Barcha yangiliklar",
     "cooperation": "Hamkorlik",
-    "copyright": "© Barcha huquqlar himoyalangan.",
+    "copyright": "© Barcha huquqlar himoyalangan.",    
+    "company": "Kompaniya",
+    "resources": "Manbalar",
     "career": "Karyera",
     "management": "Rahbariyat",
     "contact": "Aloqa",
@@ -33,6 +35,7 @@
     "ai": "Sun'iy intellekt",
     "webapp": "Web dasturlar ishlab chiqish",
     "mobile": "Mobil ilovalar",
+    "web": "Web ilovalar",
     "websitedev": "Veb-saytlar ishlab chiqish",
     "appdev": "Dasturlar ishlab chiqish",
     "design": "Dizayn chizish",
@@ -59,7 +62,12 @@
     "uploaded": "Yuklandi",
     "qa": "Savollar va takliflar",
     "menu": "Menu",
-    "team": "Bizning jamoa",
+    "team": "Bizning jamoa",    
+    "privacy policy": "Maxfiylik siyosati",
+    "cookie policy": "Cookie siyosati",
+    "accept": "Qabul qilish",
+    "ignore": "Rad etish",
+    "cookieContent": "Biz sizning tajribangizni yaxshilash uchun cookie fayllaridan foydalanamiz. Saytimizdan foydalangan holda, siz cookie fayllaridan foydalanishimizga rozilik bildirasiz.",
     "datapage": {
       "title": "Unsere Datenlösungen bieten eine umfassende Palette von Dienstleistungen für die Analyse, Verarbeitung und Interpretation Ihrer Daten, um wertvolle Einblicke zu gewinnen und fundierte Entscheidungen zu treffen. Mit einer Kombination aus Fachwissen, fortschrittlichen Technologien und bewährten Methoden unterstützen wir Sie dabei, den vollen Wert Ihrer Daten zu erschließen und Ihr Unternehmen voranzubringen.",
       "dataanalysis": "Datenanalyse",
@@ -90,6 +98,24 @@
       "computer_vision":"Computer Vision",
       "predictive":"Predictive Analytics",
       "ai_automation":"\"SI\"ga asoslangan avtomatizatsiya"
+    },
+    "cookiepage": {
+      "title": "Cookie Siyosati",
+      "intro": "<strong>Kirish</strong> Ushbu Cookie Siyosati biz, Infoharbor, siz bizning veb-saytimizga tashrif buyurganingizda cookie-fayllar va shunga o'xshash texnologiyalarni qanday ishlatishimizni tushuntiradi. Unda bu texnologiyalar nima ekanligi, nima uchun ularni ishlatishimiz va ularni boshqarish huquqlaringiz haqida ma'lumot berilgan.",
+      "cookies": "<strong>Cookie-fayllar nima?</strong> Cookie-fayllar - bu veb-saytga tashrif buyurganingizda kompyuteringiz yoki mobil qurilmangizda saqlanadigan kichik ma'lumot fayllari. Cookie-fayllar veb-saytlarning ishlashini yoki yanada samarali ishlashini ta'minlash hamda sayt egalari uchun ma'lumot berish uchun keng qo'llaniladi.",
+      "usage": "<strong>Nega biz cookie-fayllarni ishlatamiz?</strong> Biz cookie-fayllarni bir necha sabablarga ko'ra ishlatamiz:",
+      "reasons":"<ul><li><strong>Asosiy cookie-fayllar:</strong> Bu cookie-fayllar bizning veb-saytimizning asosiy funktsionaligi uchun zarur bo'lib, sizga uning xususiyatlarini ko'rib chiqish va ulardan foydalanishga imkon beradi.</li><li><strong>Shaxsiylashtirish cookie-fayllari:</strong> Ushbu cookie-fayllar yordamida bizning veb-saytimiz siz taqdim etgan ma'lumotlarni hisobga olib, sizga kengaytirilgan va shaxsiylashtirilgan xususiyatlarni taklif qilishi mumkin.</li><li><strong>Marketing cookie-fayllari:</strong> Ushbu cookie-fayllar reklama xabarlarini sizga yanada dolzarb qilish uchun ishlatiladi. Ular, shuningdek, bir xil reklamaning doimiy ravishda takrorlanishining oldini olish kabi funktsiyalarni bajaradi.</li></ul>",
+      "other": "<strong>Cookie-fayllarni qanday boshqarishingiz mumkin?</strong> Cookie sozlamalari sahifamizda cookie-fayllaringizni istalgan vaqtda boshqarishingiz mumkin. U yerda roziligingizni sozlashingiz yoki qaytarib olishingiz mumkin. <strong>Uchinchi tomon cookie-fayllaridan foydalanish</strong> Biz hamkorlik qilayotgan uchinchi tomonlar ham veb-saytimizga tashrif buyurganingizda qurilmangizga cookie-fayllarini o'rnatishi mumkin, ularning maxfiylik siyosatlarida tavsiflangan xizmatlarni taqdim etish uchun. Ushbu cookie-fayllar asosan kontentimizni va foydalanuvchi tajribangizni yaxshilash uchun mo'ljallangan. <strong>Cookie-fayllarining saqlash muddati</strong> Bizning ko'pchilik cookie-fayllarimiz 'sessiya cookie-fayllari' bo'lib, ular brauzeringizni yopganingizdan so'ng o'chiriladi. Boshqa cookie-fayllar, 'doimiy cookie-fayllar' sifatida tanilgan, qurilmangizda amal qilish muddati tugaguncha yoki siz ularni o'chirguncha saqlanadi. Saqlash muddati aniq cookie-fayllarga qarab o'zgaradi, lekin biz cookie-fayllarning zarur bo'lmaganidan ko'proq vaqt saqlanmasligini ta'minlash uchun eng yaxshi amaliyotlarga rioya qilamiz. <strong>Qo'shimcha ma'lumot</strong> Biz cookie-fayllardan olingan shaxsiy ma'lumotlarni bog'liq bo'lmagan uchinchi tomonlar bilan baham ko'rmaymiz. Cookie-fayllarni qanday ishlatishimiz haqida savollaringiz bo'lsa, iltimos, biz bilan contact@infoharbor.de manzilida bog'laning."
+    },
+    "privacypage": {
+      "title": "Maxfiylik Siyosati",
+      "intro": "<strong>1. Umumiy ma'lumotlar</strong> Ushbu Maxfiylik Siyosati sizni bizning onlayn taklifimiz va unga bog'liq veb-saytlar, funksiyalar va tarkib hamda tashqi onlayn ishtiroklar, masalan, bizning ijtimoiy media profillarimiz doirasida shaxsiy ma'lumotlarning (keyingi o‘rinlarda qisqacha „ma'lumotlar“) qayta ishlanish turi, ko‘lami va maqsadi haqida xabardor qiladi (keyingi o‘rinlarda birgalikda „onlayn taklif“ deb ataladi). Ishlatilgan atamalar, masalan, „qayta ishlash“ yoki „mas'ul shaxs“ bo‘yicha DSGVO (Umumiy Ma'lumotlarni Himoya Qilish Nizomi) 4-moddasidagi ta'riflarga murojaat qilamiz.",
+      "address": "<strong>Mas'ul shaxs:</strong> InfoHarbor, Hansastraße 116 13088 Berlin info@infoharbor.de",
+      "types": "<strong>2. Qayta ishlanadigan ma'lumotlarning turlari:</strong> <ul><li>Tarkibiy ma'lumotlar (masalan, ismlar, manzillar);</li><li>Kontakt ma'lumotlari (masalan, elektron pochta, telefon raqamlari);</li><li>Tarkib ma'lumotlari (masalan, matn kiritish, fotosuratlar, videolar);</li><li>Foydalanish ma'lumotlari (masalan, tashrif buyurilgan veb-saytlar, kontentga qiziqish, kirish vaqtlari);</li><li>Meta-/aloqa ma'lumotlari (masalan, qurilma ma'lumotlari, IP-manzillar).</li></ul>",
+      "aim": "<strong>3. Qayta ishlash maqsadi:</strong> <ul><li>Onlayn taklifni, uning funksiyalari va tarkibini taqdim etish;</li><li>Kontakt so'rovlariga javob berish va foydalanuvchilar bilan aloqa qilish;</li><li>Xavfsizlik choralari;</li><li>Qamrovni o'lchash/marketing.</li></ul>",
+      "techno": "<strong>4. Foydalanilgan texnologiyalar:</strong> <ul><li>Cookies: Bizning saytimizda cookie-fayllardan foydalanamiz, batafsil ma'lumot bizning Cookie Siyosatimizda keltirilgan;</li><li>Tahlil vositalari: Biz onlayn taklifimizdan foydalanishni o'lchash va tahlil qilish uchun tahlil vositalaridan foydalanamiz.</li></ul>",
+      "other": "<strong>5. Xavfsizlik choralari</strong>Biz DSGVO 32-moddasiga muvofiq texnika darajasi, amalga oshirish xarajatlari va qayta ishlashning turi, ko‘lami, holatlari va maqsadlarini hamda tabiiy shaxslarning huquq va erkinliklari uchun xavfning turli ehtimoli va og'irligini hisobga olgan holda, xavf darajasiga mos keladigan muvofiq texnik va tashkiliy choralarni ko'ramiz. <strong>6. Ma'lumotlarni uchinchi shaxslarga va uchinchi tomon provayderlariga uzatish</strong> Ma'lumotlaringizni uchinchi shaxslarga uzatish faqat qonuniy talablar doirasida amalga oshiriladi. Biz ma'lumotlaringizni uchinchi shaxslarga faqat DSGVO 6-modda 1-band b harfiga asoslanib shartnoma maqsadlari uchun zarur bo'lsa yoki DSGVO 6-modda 1-band f harfiga muvofiq qonuniy manfaatlar asosida iqtisodiy va samarali biznes operatsiyalarimizni amalga oshirish uchun uzatamiz. <strong>7. Ta'sirlangan shaxslarning huquqlari</strong> Sizning ma'lumotlaringiz qayta ishlanishi to'g'risida tasdiq olish, ushbu ma'lumotlar haqida ma'lumot olish, shuningdek, DSGVO 15-moddasiga muvofiq ma'lumotlarning nusxasini olish huquqiga egasiz. <strong>8. Rad etish huquqi</strong> Siz, shuningdek, DSGVO 21-moddasiga binoan, kelajakda sizga tegishli ma'lumotlarni qayta ishlashga DSGVO 21-moddasiga muvofiq istalgan vaqtda e'tiroz bildirish huquqiga egasiz. <strong>9. Maxfiylik siyosatidagi o'zgartirishlar</strong> Biz maxfiylik siyosatini o'zgartirish, huquqiy holat o'zgarganda yoki xizmat yoki ma'lumotlarni qayta ishlash o'zgarganda uni moslashtirish huquqini saqlab qolamiz."
     }
+
   }
 }

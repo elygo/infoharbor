@@ -3,11 +3,13 @@
     "infoharbor": "Infoharbor",
     "main": "Hauptseite",
     "about": "Über uns",
-    "news": "Nachrichten",
+    "news": "News",
     "allnews": "Alle Nachrichten",
     "cooperation": "Zusammenarbeit",
     "career": "Karriere",
     "copyright": "© Alle Rechte Vorbehalten.",
+    "company": "Unternehmen",
+    "resources": "Ressourcen",
     "contact": "Kontakt",
     "contact_info": "Sind Sie bereit, Ihr Unternehmen auf das nächste Level zu bringen? Kontaktieren Sie uns noch heute und erfahren Sie, wie InfoHarbor Ihnen helfen kann, Ihre IT-Herausforderungen zu meistern und Ihre Geschäftsziele zu erreichen.",
     "welcome": "Willkommen!",
@@ -30,7 +32,8 @@
     "technologies": "Technologien",
     "ai": "Künstliche Intelligenz",
     "webapp": "Webanwendungen entwickeln",
-    "mobile": "Mobile",
+    "mobile": "Mobile apps",
+    "web": "Web apps",
     "websitedev": "Webseitenentwicklung",
     "appdev": "Entwicklung von Programmen",
     "design": "UX/UI zeichnung",
@@ -59,6 +62,11 @@
     "menu": "Menu",
     "team": "Unser Team",
     "social": "Soziale Netzwerke",    
+    "privacy policy": "Datenschutzerklärung",
+    "cookie policy": "Cookie Richtlinie",
+    "accept": "Akzeptieren",
+    "ignore": "Ignorieren",
+    "cookieContent": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.",
     "datapage": {
       "title": "Unsere Datenlösungen bieten eine umfassende Palette von Dienstleistungen für die Analyse, Verarbeitung und Interpretation Ihrer Daten, um wertvolle Einblicke zu gewinnen und fundierte Entscheidungen zu treffen. Mit einer Kombination aus Fachwissen, fortschrittlichen Technologien und bewährten Methoden unterstützen wir Sie dabei, den vollen Wert Ihrer Daten zu erschließen und Ihr Unternehmen voranzubringen.",
       "dataanalysis": "Datenanalyse",
@@ -89,6 +97,23 @@
       "computer_vision":"Computer Vision",
       "predictive":"Predictive Analytics",
       "ai_automation":"AI-basierte Automatisierung"
+    },   
+    "cookiepage": {
+      "title": "Cookie-Richtlinie",
+      "intro": "<strong>Einführung</strong>Diese Cookie-Richtlinie erläutert, wie wir, InfoHarbor Cookies und ähnliche Technologien verwenden, um Sie zu erkennen, wenn Sie unsere Website besuchen. Es erklärt, was diese Technologien sind und warum wir sie verwenden, sowie Ihre Rechte zur Kontrolle unserer Nutzung davon.",
+      "cookies": "<strong>Was sind Cookies?</strong> Cookies sind kleine Datendateien, die auf Ihrem Computer oder mobilen Gerät gespeichert werden, wenn Sie eine Website besuchen. Cookies werden weitgehend genutzt, um Websites zu ermöglichen oder effizienter zu funktionieren, sowie um Informationen an die Besitzer der Seite zu liefern.",
+      "usage": "<strong>Warum verwenden wir Cookies?</strong> Wir setzen Cookies aus verschiedenen Gründen ein:",
+      "reasons":"<ul><li><strong>Technisch notwendige Cookies:</strong> Diese Cookies sind für die grundlegende Funktionalität unserer Website notwendig und ermöglichen es Ihnen, auf der Seite zu navigieren und ihre Features zu nutzen.</li><li><strong>Cookies zur Personalisierung:</strong>Mit diesen Cookies kann unsere Website die Informationen berücksichtigen, die Sie angeben, und Ihnen verbesserte und personalisierte Funktionen bieten.</li><li><strong>Marketing-Cookies:</strong> Diese Cookies werden verwendet, um Werbebotschaften relevanter für Sie zu gestalten. Sie führen auch Funktionen aus, wie das Verhindern, dass die gleiche Anzeige ständig wieder erscheint.</li></ul>",
+      "other": "<strong>Wie können Sie Cookies verwalten?</strong> Sie können Ihre Cookie-Einstellungen jederzeit über unsere Cookie-Einstellungsseite verwalten. Sie können dort Ihre Zustimmung anpassen oder widerrufen. <strong>Verwendung von Drittanbieter-Cookies</strong> Wir arbeiten mit Drittanbietern zusammen, die ihrerseits Cookies auf Ihrem Gerät setzen können, wenn Sie unsere Website besuchen, um ihnen die Bereitstellung der in ihren Datenschutzrichtlinien beschriebenen Dienste zu ermöglichen. Diese Cookies sind hauptsächlich dazu gedacht, unsere Inhalte und Ihre Nutzererfahrung zu verbessern. <strong>Speicherdauer der Cookies</strong> Die meisten unserer Cookies sind sogenannte 'Session-Cookies', die gelöscht werden, sobald Sie Ihren Browser schließen. Andere Cookies, genannt 'Persistente Cookies', bleiben auf Ihrem Gerät gespeichert, bis sie ablaufen oder Sie diese löschen. Die genaue Speicherdauer variiert je nach dem spezifischen Cookie, aber wir folgen den Best Practices, um sicherzustellen, dass Cookies nicht länger als notwendig gespeichert werden. <strong>Weitere Informationen</strong> Wir teilen keine persönlichen Daten aus Cookies mit nicht angebundenen Dritten. Wenn Sie Fragen zu unserer Verwendung von Cookies haben, kontaktieren Sie uns bitte unter contact@infoharbor.de"
+    },
+    "privacypage": {
+      "title": "Datenschutzerklärung",
+      "intro": "<strong>1. Allgemeine Informationen</strong> Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz „Daten“) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unser Social Media Profile auf (nachfolgend gemeinsam bezeichnet als „Onlineangebot“). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. „Verarbeitung“ oder „Verantwortlicher“ verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).",
+      "address": "<strong>Verantwortlicher:</strong> InfoHarbor, Hansastraße 116 13088 Berlin info@infoharbor.de",
+      "types": "<strong>2. Arten der verarbeiteten Daten:</strong> <ul><li>Bestandsdaten (z.B., Namen, Adressen);</li> <li>Kontaktdaten (z.B., E-Mail, Telefonnummern);</li><li>Inhaltsdaten (z.B., Texteingaben, Fotografien, Videos);</li><li>Nutzungsdaten (z.B., besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten);</li><li>Meta-/Kommunikationsdaten (z.B., Geräte-Informationen, IP-Adressen).</li></ul>",
+      "aim": "<strong>3. Zweck der Verarbeitung:</strong> <ul><li>Zurverfügungstellung des Onlineangebotes, seiner Funktionen und Inhalte;</li><li>Beantwortung von Kontaktanfragen und Kommunikation mit Nutzern;</li><li>Sicherheitsmaßnahmen;</li><li>Reichweitenmessung/Marketing.</li></ul>",
+      "techno": "<strong>4. Verwendete Technologien:</strong> <ul><li>Cookies: Wir setzen auf unserer Seite Cookies ein, wie in unserer Cookie-Richtlinie näher erläutert;</li><li>Analysetools: Wir nutzen Analysetools zur Messung und Analyse der Nutzung unseres Onlineangebotes.</li></ul>",
+      "other": "<strong>5. Sicherheitsmaßnahmen</strong>Wir treffen nach Maßgabe des Art. 32 DSGVO unter Berücksichtigung des Stands der Technik, der Implementierungskosten und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung sowie der unterschiedlichen Eintrittswahrscheinlichkeit und Schwere des Risikos für die Rechte und Freiheiten natürlicher Personen, geeignete technische und organisatorische Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten. <strong>6. Übermittlung von Daten an Dritte und Drittanbieter</strong> Eine Übermittlung Ihrer Daten an Dritte erfolgt nur im Rahmen der gesetzlichen Vorschriften. Wir geben Ihre Daten nur dann an Dritte weiter, wenn dies z.B. auf Grundlage des Art. 6 Abs. 1 lit. b) DSGVO für Vertragszwecke erforderlich ist oder aufgrund berechtigter Interessen gemäß Art. 6 Abs. 1 lit. f. DSGVO an der wirtschaftlichen und effektiven Betreibung unseres Geschäftsbetriebes. <strong>7. Rechte der betroffenen Personen</strong> Sie haben das Recht, eine Bestätigung darüber zu verlangen, ob betreffende Daten verarbeitet werden, Auskunft über diese Daten sowie weitere Informationen und Kopie der Daten entsprechend Art. 15 DSGVO. <strong>8. Widerrufsrecht</strong> Sie haben ferner nach Art. 21 DSGVO das Recht, gegen die künftige Verarbeitung der Sie betreffenden Daten nach Maßgabe des Art. 21 DSGVO jederzeit zu widersprechen. <strong>9. Änderungen der Datenschutzerklärung</strong> Wir behalten uns vor, die Datenschutzerklärung zu ändern, um sie an geänderte Rechtslagen, oder bei Änderungen des Dienstes sowie der Datenverarbeitung anzupassen."
     }
   }
 }
