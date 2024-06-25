@@ -31,7 +31,7 @@ i18n.use(initReactI18next).init({
     resources,
     lng: window.localStorage.i18nextLng?.toString().toLowerCase() == domain ? window.localStorage.i18nextLng : "En",
     defaultNS: "common",
-    fallbackLng: domain == "de" ? "De" : "Uz",
+    fallbackLng: domain == "de" ? "De" : "Uz"
 });
 
 export default i18n;

@@ -42,13 +42,19 @@ export default {
           "100%": {
             transform: "translateY(0px)",
           },
-        }
+        },
+        scroll: {
+          '0%': { opacity: '1' },
+          '50%': { transform: 'translateY(0)', opacity: '1' },
+          '100%': { transform: 'translateY(16px)', opacity: '1' },
+        },
       },
       animation: {
         'spin-slow': 'spin 100s linear infinite',
         'spin-medium': 'spin 50s linear infinite',
         "bounce-slow": "bounceslow 12s linear infinite",
         "bounce-medium": "bounceslow 8s linear infinite",
+        "scroll": 'scroll 2.2s cubic-bezier(.15,.41,.69,.94) infinite',
       },
       display: ["group-hover"],
     },
